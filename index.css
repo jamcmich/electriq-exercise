@@ -1,0 +1,384 @@
+/*
+*
+*  ----- GLOBAL VARIABLES -----
+*
+*/
+
+/* --- Mobile --- */
+:root {
+  /* Primary Colors */
+  --color-midnight-green: rgb(1, 78, 86);
+  --color-light-coral: rgb(246, 126, 126);
+  --color-white: rgb(255, 255, 255);
+
+  /* Secondary Colors */
+  --color-rapture-blue: rgb(121, 200, 199);
+  --color-police-blue: rgb(44, 98, 105);
+  --color-deep-jungle-green: rgb(0, 64, 71);
+  --color-sacramento-state-green: rgb(1, 47, 52);
+  --color-dark-green: rgb(0, 37, 41);
+
+  /* Typography */
+  font-size: 16px;
+  --font-family-livvic: "Livvic", "Arial", "Helvetica", sans-serif;
+
+  --font-size-heading-1--lg: 2.5rem; /* 40px */
+  --font-size-heading-1--sm: 2.5rem; /* 40px */
+  --font-size-heading-2: 2rem; /* 32px */
+  --font-size-heading-3: 1.125rem; /* 18px */
+  --font-size-body--lg: 0.938rem; /* 15px */
+  --font-size-body--sm: 0.938rem; /* 15px */
+
+  --font-weight--500: 500; /* medium */
+  --font-weight--600: 600; /* semi-bold */
+  --font-weight--700: 700; /* bold */
+
+  --line-height-heading-1--lg: 2.5rem; /* 40px */
+  --line-height-heading-1--sm: 2.5rem; /* 40px */
+  --line-height-heading-2: 2rem; /* 32px */
+  --line-height-heading-3: 1.75rem; /* 28px */
+  --line-height-body--lg: 1.75rem; /* 28px */
+  --line-height-body--sm: 1.563rem; /* 25px */
+
+  /* Spacing */
+  --padding-section: 1.5rem; /* 24px */
+}
+
+/* --- Laptop --- */
+/* @media screen and (max-width: 1024px) { */
+/*   :root { */
+/*     font-size: 16px; */
+/*   } */
+/* } */
+
+/* --- Tablet --- */
+@media screen and (min-width: 480px) {
+  :root {
+    /* Typography */
+    --font-size-heading-1--lg: 4rem; /* 64px */
+    --font-size-heading-1--sm: 4rem; /* 64px */
+    --font-size-heading-2: 2rem; /* 32px */
+    --font-size-heading-3: 1.125rem; /* 18px */
+    --font-size-button: 1.125rem; /* 18px */
+    --font-size-body--lg: 0.938rem; /* 15px */
+    --font-size-body--sm: 0.938rem; /* 15px */
+
+    --line-height-heading-1--lg: 3.5rem; /* 56px */
+    --line-height-heading-1--sm: 3.5rem; /* 56px */
+    --line-height-heading-2: 2rem; /* 32px */
+    --line-height-heading-3: 1.75rem; /* 28px */
+    --line-height-button: 1.75rem; /* 28px */
+    --line-height-body--lg: 1.75rem; /* 28px */
+    --line-height-body--sm: 1.563rem; /* 25px */
+
+    /* Spacing */
+    --padding-section: 6.063rem; /* 97px */
+  }
+
+  .navbar__logo {
+    width: 130px;
+  }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1024px) {
+  :root {
+    /* Typography */
+    --font-size-heading-1--lg: 6.25rem; /* 100px */
+    --font-size-heading-1--sm: 4rem; /* 64px */
+    --font-size-heading-2: 3rem; /* 48px */
+    --font-size-heading-3: 1.125rem; /* 18px */
+    --font-size-body--lg: 1.125rem; /* 18px */
+    --font-size-body--sm: 0.938rem; /* 15px */
+
+    --line-height-heading-1--lg: 6.25rem; /* 100px */
+    --line-height-heading-1--sm: 3.5rem; /* 56px */
+    --line-height-heading-2: 3rem; /* 48px */
+    --line-height-heading-3: 1.75rem; /* 28px */
+    --line-height-body--lg: 1.75rem; /* 28px */
+    --line-height-body--sm: 1.563rem; /* 25px */
+
+    /* Spacing */
+    --padding-section: 10.313rem; /* 165px */
+  }
+}
+
+/*
+*
+*  ----- GLOBAL STYLES -----
+*
+*  For styling sets of elements.
+*
+*/
+
+/* --- Tags --- */
+* {
+  z-index: 1;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  font-family: var(--font-family-livvic);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 120px;
+  padding: 0 24px;
+  color: var(--color-white);
+}
+
+.navbar__logo {
+  width: 130px;
+}
+
+/* --- Tablet --- */
+@media screen and (min-width: 480px) {
+  .navbar__logo {
+    width: 160px;
+  }
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  place-content: center center;
+
+  min-height: 100vh;
+  padding: 0 var(--padding-section);
+  color: var(--color-white);
+
+  border: 3px solid red;
+}
+
+section:nth-child(odd) {
+  background-color: var(--color-sacramento-state-green);
+}
+
+section:nth-child(even) {
+  background-color: var(--color-midnight-green);
+}
+
+/* --- Typography --- */
+/* Headings */
+.heading-1--lg {
+  font-size: var(--font-size-heading-1--lg);
+  font-weight: var(--font-weight--700);
+  line-height: var(--line-height-heading-1--lg);
+}
+
+.heading-1--sm {
+  font-size: var(--font-size-heading-1--sm);
+  font-weight: var(--font-weight--700);
+  line-height: var(--line-height-heading-1--sm);
+}
+
+.heading-2 {
+  font-size: var(--font-size-heading-2);
+  font-weight: var(--font-weight--700);
+  line-height: var(--line-height-heading-2);
+}
+
+.heading-3 {
+  font-size: var(--font-size-heading-3);
+  font-weight: var(--font-weight--700);
+  line-height: var(--line-height-heading-3);
+}
+
+/* Body */
+.body--lg {
+  font-size: var(--font-size-body--lg);
+  font-weight: var(--font-weight--600);
+  line-height: var(--line-height-body--lg);
+}
+
+.body--sm {
+  font-size: var(--font-size-body--sm);
+  font-weight: var(--font-weight--600);
+  line-height: var(--line-height-body--sm);
+}
+
+/* --- Accents --- */
+/* Text */
+.accent-text--coral {
+  color: var(--color-light-coral);
+}
+
+/* Elements */
+.accent-element--coral::before {
+  display: block;
+  content: "";
+  width: 40px;
+  margin-bottom: 32px;
+  border-top: 3px solid var(--color-light-coral);
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1400px) {
+  .accent-element--rapture-blue::before {
+    display: block;
+    content: "";
+    width: 50px;
+    margin-bottom: 80px;
+    border-top: 3px solid var(--color-rapture-blue);
+  }
+}
+
+/* --- Buttons --- */
+.button-primary {
+  font-family: var(--font-family-livvic);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight--600);
+  line-height: var(--line-height-button);
+
+  border: 3px solid var(--color-white);
+  border-radius: 24px;
+}
+
+.button-primary--default {
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.button-primary--default--dark {
+  color: var(--color-sacramento-state-green);
+  border-color: var(--color-sacramento-state-green);
+}
+
+.button-primary--hover:hover {
+  color: var(--color-sacramento-state-green);
+  background-color: var(--color-white);
+}
+
+.button-primary--hover--dark:hover {
+  color: var(--color-white);
+  background-color: var(--color-sacramento-state-green);
+  border-color: var(--color-sacramento-state-green);
+}
+
+.button-primary--disabled {
+  opacity: 25%;
+}
+
+.button-primary--disabled--dark {
+  color: var(--color-sacramento-state-green);
+  border-color: var(--color-sacramento-state-green);
+  opacity: 25%;
+}
+
+/*
+*
+*  ----- LOCAL STYLES -----
+*
+*  For styling specific elements.
+*
+*/
+
+/* --- ABOUT PAGE --- */
+/* Landing */
+.landing__text-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  /* flex: 1 1 auto; */
+  gap: 18px;
+
+  text-align: center;
+}
+
+.landing__img-container-01 {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__img-01 {
+  width: 100%;
+  max-width: 358px;
+}
+
+.landing__img-container-02 {
+  display: none;
+}
+
+/* --- Tablet --- */
+@media screen and (min-width: 480px) {
+  .landing__text-container {
+    gap: 24px;
+  }
+
+  .landing__img-container-01 {
+    left: unset;
+    padding: inherit;
+  }
+}
+
+/* --- Desktop --- */
+@media screen and (min-width: 1400px) {
+  .landing__text-container {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 140px;
+
+    text-align: left;
+  }
+
+  .landing__heading {
+    flex-shrink: 0;
+  }
+
+  .landing__img-container-02 {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landing__img-02 {
+    width: 100%;
+    max-width: 100px;
+  }
+}
+
+/* Features */
+.features__items {
+  text-align: center;
+}
+
+.features__heading {
+  font-size: 18px;
+}
+
+.features__desc {
+  opacity: 80%;
+}
