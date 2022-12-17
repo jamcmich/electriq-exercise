@@ -1,97 +1,124 @@
+/* GLOBAL VARIABLES */
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  /* Breakpoints */
+  --breakpoint-desktop: 1200px;
+  --breakpoint-laptop: 1024px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-mobile: 480px;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Primary Colors */
+  --color-midnight-green: rgb(1, 78, 86);
+  --color-light-coral: rgb(246, 126, 126);
+  --color-white: rgb(255, 255 , 255);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+  /* Secondary Colors */
+  --color-rapture-blue: rgb(121, 200, 199);
+  --color-police-blue: rgb(44, 98, 105);
+  --color-deep-jungle-green: rgb(0, 64, 71);
+  --color-sacramento-state-green: rgb(1, 47, 52);
+  --color-dark-green: rgb(0, 37, 41);
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  /* Typography */
+  --font-family-livvic: 'Livvic', 'Arial', 'Helvetica', sans-serif;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  --font-size-100px: 100px;
+  --font-size-64px: 64px;
+  --font-size-48px: 48px;
+  --font-size-28px: 28px;
+  --font-size-18px: 18px;
+  --font-size-15px: 15px;
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+  --font-weight-500: 500; /* medium */
+  --font-weight-600: 600; /* semi-bold */
+  --font-weight-700: 700; /* bold */
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  --line-height-100px: 100px;
+  --line-height-56px: 56px;
+  --line-height-48px: 48px;
+  --line-height-28px: 28px;
+  --line-height-25px: 25px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+/* GLOBAL STYLES */
+/* Section Styles */
+h1, body {
+  font-family: var(--font-family-livvic);
 }
 
-.card {
-  padding: 2em;
+.section-header-1--large {
+  font-size: var(--font-size-100px);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-100px);
 }
 
-.read-the-docs {
-  color: #888;
+.section-header-1--small {
+  font-size: var(--font-size-64px);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-56px);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.section-header-2 {
+  font-size: var(--font-size-48px);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-48px);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.section-header-3 {
+  font-size: var(--font-size-18px);
+  font-weight: var(--font-weight-700);
+  line-height: var(--line-height-28px);
+}
+
+/* Body Styles */
+.body-text-1 {
+  font-size: var(--font-size-18px);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-28px);
+}
+
+.body-text-2 {
+  font-size: var(--font-size-15px);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-25px);
+}
+
+/* Button Styles */
+.button-primary {
+  font-family: var(--font-family-livvic);
+  font-size: var(--font-size-18px);
+  font-weight: var(--font-weight-600);
+
+  border: 3px solid var(--color-white);
+  border-radius: 24px;
+}
+
+.button-primary--default {
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.button-primary--default--dark {
+  color: var(--color-sacramento-state-green);
+  border-color: var(--color-sacramento-state-green);
+}
+
+.button-primary--hover:hover {
+  color: var(--color-sacramento-state-green);
+  background-color: var(--color-white);
+}
+
+.button-primary--hover--dark:hover {
+  color: var(--color-white);
+  background-color: var(--color-sacramento-state-green);
+  border-color: var(--color-sacramento-state-green);
+}
+
+.button-primary--disabled {
+  opacity: 25%;
+}
+
+.button-primary--disabled--dark {
+  color: var(--color-sacramento-state-green);
+  border-color: var(--color-sacramento-state-green);
+  opacity: 25%;
 }
