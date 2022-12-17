@@ -1,4 +1,4 @@
-import './style.css'
+import './global.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 
@@ -8,7 +8,7 @@ document.querySelector('#app').innerHTML = `
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+      <img src="${ javascriptLogo }" class="logo vanilla" alt="JavaScript logo" />
     </a>
     <h1>Hello Vite!</h1>
     <div class="card">
