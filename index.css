@@ -30,6 +30,8 @@
   --font-size-button: 1.125rem; /* 18px */
   --font-size-body--lg: 0.938rem; /* 15px */
   --font-size-body--sm: 0.938rem; /* 15px */
+  --font-size-subheading--lg: 0.813rem; /* 15px */
+  --font-size-subheading--sm: 0.813rem; /* 13px */
 
   --font-weight--500: 500; /* medium */
   --font-weight--600: 600; /* semi-bold */
@@ -43,6 +45,8 @@
   --line-height-button: 1.75rem; /* 28px */
   --line-height-body--lg: 1.75rem; /* 28px */
   --line-height-body--sm: 1.563rem; /* 25px */
+  --line-height-subheading--lg: 1.563rem; /* 25px */
+  --line-height-subheading--sm: 1.125rem; /* 18px */
 
   /* Spacing */
   --padding-section: 16% 8%;
@@ -60,6 +64,8 @@
     --font-size-button: 1.125rem; /* 18px */
     --font-size-body--lg: 0.938rem; /* 15px */
     --font-size-body--sm: 0.938rem; /* 15px */
+    --font-size-subheading--lg: 0.813rem; /* 15px */
+    --font-size-subheading--sm: 0.813rem; /* 13px */
 
     --line-height-heading-1--lg: 3.5rem; /* 56px */
     --line-height-heading-1--sm: 3.5rem; /* 56px */
@@ -69,6 +75,46 @@
     --line-height-button: 1.75rem; /* 28px */
     --line-height-body--lg: 1.75rem; /* 28px */
     --line-height-body--sm: 1.563rem; /* 25px */
+    --line-height-subheading--lg: 1.563rem; /* 25px */
+    --line-height-subheading--sm: 1.125rem; /* 18px */
+  }
+}
+
+/* (Laptop) */
+@media screen and (min-width: 768px) {
+  :root {
+    /* Typography */
+    --font-size-heading-1--lg: 4rem; /* 64px */
+    --font-size-heading-1--sm: 4rem; /* 64px */
+    --font-size-heading-2: 2rem; /* 32px */
+    --font-size-heading-3: 1.125rem; /* 18px */
+    --font-size-nav-link: 1.125rem; /* 18px */
+    --font-size-button: 1.125rem; /* 18px */
+    --font-size-body--lg: 0.938rem; /* 15px */
+    --font-size-body--sm: 0.938rem; /* 15px */
+    --font-size-subheading--lg: 0.813rem; /* 15px */
+    --font-size-subheading--sm: 0.813rem; /* 13px */
+
+    --line-height-heading-1--lg: 3.5rem; /* 56px */
+    --line-height-heading-1--sm: 3.5rem; /* 56px */
+    --line-height-heading-2: 2rem; /* 32px */
+    --line-height-heading-3: 1.75rem; /* 28px */
+    --line-height-nav-link: 1.75rem; /* 28px */
+    --line-height-button: 1.75rem; /* 28px */
+    --line-height-body--lg: 1.75rem; /* 28px */
+    --line-height-body--sm: 1.563rem; /* 25px */
+    --line-height-subheading--lg: 1.563rem; /* 25px */
+    --line-height-subheading--sm: 1.125rem; /* 18px */
+  }
+}
+
+/* (Large Laptop) */
+@media screen and (min-width: 1024px) {
+  :root {
+    /* Typography */
+    --font-size-heading-2: 40px; /* 40px */
+
+    --line-height-heading-2: 40px; /* 40px */
   }
 }
 
@@ -84,6 +130,8 @@
     --font-size-button: 1.125rem; /* 18px */
     --font-size-body--lg: 1.125rem; /* 18px */
     --font-size-body--sm: 0.938rem; /* 15px */
+    --font-size-subheading--lg: 0.813rem; /* 15px */
+    --font-size-subheading--sm: 0.813rem; /* 13px */
 
     --line-height-heading-1--lg: 6.25rem; /* 100px */
     --line-height-heading-1--sm: 3.5rem; /* 56px */
@@ -93,6 +141,8 @@
     --line-height-button: 1.75rem; /* 28px */
     --line-height-body--lg: 1.75rem; /* 28px */
     --line-height-body--sm: 1.563rem; /* 25px */
+    --line-height-subheading--lg: 1.563rem; /* 25px */
+    --line-height-subheading--sm: 1.125rem; /* 18px */
   }
 }
 
@@ -106,7 +156,7 @@
 
 /* --- Element Styles --- */
 * {
-  z-index: 1;
+  /* z-index: 1; */
   box-sizing: border-box;
 
   margin: 0;
@@ -137,8 +187,6 @@ nav {
   height: 120px;
   padding: 48px 24px;
   color: var(--color-white);
-
-  transition: padding 0.4s ease-in-out;
 }
 
 .nav__main-bar {
@@ -297,14 +345,6 @@ section {
   border: 3px solid red;
 }
 
-section:nth-child(odd) {
-  background-color: var(--color-sacramento-state-green);
-}
-
-section:nth-child(even) {
-  background-color: var(--color-midnight-green);
-}
-
 /* Links */
 a {
   cursor: pointer;
@@ -324,7 +364,12 @@ button {
   cursor: pointer;
 }
 
-/* --- Typography --- */
+/*
+==========================================================================
+  Typography
+==========================================================================
+*/
+
 /* Headings */
 .heading-1--lg {
   font-size: var(--font-size-heading-1--lg);
@@ -348,6 +393,20 @@ button {
   font-size: var(--font-size-heading-3);
   font-weight: var(--font-weight--700);
   line-height: var(--line-height-heading-3);
+}
+
+.subheading--lg {
+  font-size: var(--font-size-subheading--lg);
+  font-weight: var(--font-weight--500);
+  line-height: var(--line-height-subheading--lg);
+  font-style: italic;
+}
+
+.subheading--sm {
+  font-size: var(--font-size-subheading--sm);
+  font-weight: var(--font-weight--500);
+  line-height: var(--line-height-subheading--sm);
+  font-style: italic;
 }
 
 /* Navbar Links */
@@ -376,10 +435,18 @@ button {
   line-height: var(--line-height-body--sm);
 }
 
-/* --- Accents --- */
+/*
+==========================================================================
+  Accents
+==========================================================================
+*/
 /* Text */
 .accent-text--coral {
   color: var(--color-light-coral);
+}
+
+.accent-text--rapture-blue {
+  color: var(--color-rapture-blue);
 }
 
 /* Elements */
@@ -406,7 +473,11 @@ button {
   }
 }
 
-/* --- Buttons --- */
+/*
+==========================================================================
+  Buttons
+==========================================================================
+*/
 .button-primary {
   display: flex;
   flex-shrink: 0;
@@ -477,6 +548,7 @@ button {
 
 .landing {
   min-height: 100vh;
+  background-color: var(--color-midnight-green);
 }
 
 .landing__text-container {
@@ -569,6 +641,7 @@ button {
 /* Features Section */
 .features {
   gap: 56px;
+  background-color: var(--color-sacramento-state-green);
 }
 
 .features__heading-container {
@@ -673,5 +746,173 @@ button {
 
   .features__items {
     max-width: none;
+  }
+}
+
+/*
+==========================================================================
+  Testimonials Section
+==========================================================================
+*/
+
+.testimonials__heading,
+.quote__text {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 84px;
+
+  padding: 140px 24px;
+  background-color: var(--color-deep-jungle-green);
+}
+
+.testimonials__heading {
+  text-align: center;
+}
+
+/* Testimonials Collection */
+.testimonials__collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 84px;
+}
+
+/* Testimonials Quotes */
+.testimonials__quote-container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote__graphic {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -60%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonials Profiles */
+.testimonials__profiles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  text-align: center;
+}
+
+.testimonials__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__name {
+  margin-bottom: 2px;
+}
+
+.profile__title {
+}
+
+/* Testimonials Portrait */
+.testimonials__portrait {
+  max-width: 62px;
+
+  border-radius: 100%;
+}
+
+/* Testimonials Graphics */
+.testimonials__graphic-container-01,
+.testimonials__graphic-container-02 {
+  position: absolute;
+  z-index: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials__graphic-container-01 {
+  top: 0;
+  left: 0;
+}
+
+.testimonials__graphic-container-02 {
+  bottom: 0;
+  right: 0;
+}
+
+/* (Tablet) */
+@media screen and (min-width: 480px) {
+  .testimonials {
+    padding: 124px 72px;
+  }
+
+  .quote__text {
+    max-width: 80%;
+  }
+}
+
+/* (Laptop) */
+@media screen and (min-width: 768px) {
+  .testimonials {
+    padding: 140px 165px;
+  }
+
+  .quote__text {
+    max-width: none;
+  }
+}
+
+/* (Large Laptop) */
+@media screen and (min-width: 1024px) {
+  .testimonials {
+    padding: 128px 72px;
+    gap: 96px;
+  }
+
+  .testimonials__collection {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .testimonials__heading {
+    max-width: 80%;
+  }
+
+  .testimonials__profiles-container {
+    gap: 32px;
+  }
+
+  .testimonials__portrait {
+    max-width: 80px;
+  }
+}
+
+/* (Desktop) */
+@media screen and (min-width: 1440px) {
+  .testimonials {
+    padding: 144px 164px;
+  }
+
+  .testimonials__heading {
+    max-width: 90%;
   }
 }
