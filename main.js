@@ -1,23 +1,17 @@
-import "./index.css";
-import javascriptLogo from "./javascript.svg";
-import { setupCounter } from "./counter.js";
+const handleMenuClick = (elem) => {
+  let body = document.body,
+    sidePanelElem = document.querySelector(".nav__side-panel"),
+    overlayElem = document.querySelector(".nav__overlay");
 
-document.querySelector("#app").innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${ javascriptLogo }" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`;
+  if (elem.dataset.icon === "mdi:menu") {
+    body.classList.add("no-scroll");
+    sidePanelElem.classList.add("nav__side-panel--is-open");
+    overlayElem.classList.add("nav__overlay--is-visible");
+  }
 
-setupCounter(document.querySelector("#counter"));
+  if (elem.dataset.icon === "mdi:close") {
+    body.classList.remove("no-scroll");
+    sidePanelElem.classList.remove("nav__side-panel--is-open");
+    overlayElem.classList.remove("nav__overlay--is-visible");
+  }
+};

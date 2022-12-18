@@ -22,8 +22,61 @@
   <body>
     <!-- Navigation Bar -->
     <nav>
-      <img class="navbar__logo" src="public/assets/logo-myteam.svg" alt="" />
-      <span class="iconify" data-icon="mdi:menu" data-width="48"></span>
+      <div class="nav__main-bar">
+        <img class="nav__logo" src="public/assets/logo-myteam.svg" alt="" />
+        <span
+          id="icon-menu"
+          class="iconify nav__show-until"
+          data-icon="mdi:menu"
+          data-width="32"
+          onclick="handleMenuClick(this)"
+        ></span>
+
+        <ul class="nav__links nav__links--horizontal no-bullets">
+          <li class="nav__link-item"><a class="nav-link">home</a></li>
+          <li class="nav__link-item"><a class="nav-link">about us</a></li>
+        </ul>
+
+        <button
+          class="nav-link button-primary button-primary--default button-primary--hover nav__hide-until"
+        >
+          contact us
+        </button>
+      </div>
+
+      <div class="nav__overlay">
+        <div class="nav__side-panel">
+          <div class="nav__close-container">
+            <span
+              id="icon-close"
+              class="iconify"
+              data-icon="mdi:close"
+              data-width="32"
+              onclick="handleMenuClick(this)"
+            ></span>
+          </div>
+
+          <ul class="nav__links no-bullets">
+            <li class="nav__link-item"><a class="nav-link">home</a></li>
+            <li class="nav__link-item"><a class="nav-link">about us</a></li>
+            <li class="nav__link-item">
+              <button
+                class="nav-link button-primary button-primary--default button-primary--hover"
+              >
+                contact us
+              </button>
+            </li>
+          </ul>
+
+          <div class="nav__img-container">
+            <img
+              class="nav__img"
+              src="public/assets/navbar-graphic.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </nav>
 
     <!-- Landing Section -->
@@ -42,7 +95,7 @@
       <div class="landing__img-container-01">
         <img
           class="landing__img-01"
-          src="public/assets/about-landing-graphic-01.png"
+          src="public/assets/about-landing-graphic-01.svg"
           alt=""
         />
       </div>
@@ -104,6 +157,9 @@
         about to change that.
       </p>
     </section>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="main.js"></script>
 
     <!-- Load icon data from Iconify API -->
     <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
