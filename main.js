@@ -19,3 +19,25 @@ const handleCloseMenu = () => {
 
   document.body.style.overflow = "auto";
 };
+
+const handleShowCard = (id) => {
+  const buttonsArray = document.getElementsByClassName(
+    "about-directors__card-button"
+  );
+
+  for (let button of buttonsArray) {
+    if (button.id === id) {
+      const icon = button.children[0];
+
+      if (icon.getAttribute("data-icon") === "mdi:plus-thick") {
+        icon.setAttribute("data-icon", "mdi:cancel-bold");
+        button.previousElementSibling.style.opacity = "1";
+        button.classList.add("bg--rapture-blue");
+      } else if (icon.getAttribute("data-icon") === "mdi:cancel-bold") {
+        icon.setAttribute("data-icon", "mdi:plus-thick");
+        button.previousElementSibling.style.opacity = "0";
+        button.classList.remove("bg--rapture-blue");
+      }
+    }
+  }
+};

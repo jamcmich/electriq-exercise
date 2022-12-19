@@ -87,190 +87,414 @@
       />
     </section>
 
-    <!-- Features Section -->
-    <section class="home-features">
-      <div class="home-features__heading-container">
-        <h1 class="home-features__heading heading-2 accent-element--coral">
-          Build & manage distributed teams like no one else.
-        </h1>
+    <!-- Directors Section -->
+    <section class="home-testimonials about-directors">
+      <h1 class="home-testimonials__heading heading-2">Meet the directors</h1>
+
+      <!-- Profile Cards -->
+      <div class="about-directors__cards-container">
+        <!-- Nikita Marks -->
+        <div class="about-directors__card">
+          <img
+            class="about-directors__portrait"
+            src="/assets/about/about-directors-nikita-marks.jpg"
+            alt="Nikita Marks"
+          />
+
+          <div class="about-directors__profile">
+            <h2
+              class="about-directors__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Nikita Marks
+            </h2>
+            <span class="subheading--sm">Founder & CEO</span>
+          </div>
+
+          <div class="about-directors__alt-card">
+            <div class="about-directors__alt-text">
+              <h2
+                class="about-directors__alt-name heading-3 accent-text--rapture-blue"
+              >
+                Nikita Marks
+              </h2>
+
+              <p class="about-directors__alt-quote body--sm">
+                "vitae tempus quam pellentesque nec nam aliquam sem et tortor
+                consequat id porta nibh venenatis cras sed felis"
+              </p>
+            </div>
+
+            <div class="about-directors__alt-icons">
+              <a href="https://twitter.com/electriqmrkting" target="_blank">
+                <span
+                  class="iconify"
+                  data-icon="uil:twitter"
+                  data-width="24"
+                ></span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/electriqmarketing/"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="uil:linkedin"
+                  data-width="24"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <button
+            id="nikita-marks"
+            class="about-directors__card-button"
+            onclick="handleShowCard(this.id)"
+          >
+            <span
+              class="iconify about-directors__icon"
+              data-icon="mdi:plus-thick"
+              data-width="24"
+            ></span>
+          </button>
+        </div>
+
+        <!-- Cristian Duncan -->
+        <div class="about-directors__card">
+          <img
+            class="about-directors__portrait"
+            src="/assets/about/about-directors-cristian-duncan.jpg"
+            alt="Cristian Duncan"
+          />
+
+          <div class="about-directors__profile">
+            <h2
+              class="about-directors__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Cristian Duncan
+            </h2>
+            <span class="subheading--sm">Co-founder & COO</span>
+          </div>
+
+          <div class="about-directors__alt-card">
+            <div class="about-directors__alt-text">
+              <h2
+                class="about-directors__alt-name heading-3 accent-text--rapture-blue"
+              >
+                Cristian Duncan
+              </h2>
+
+              <p class="about-directors__alt-quote body--sm">
+                "quam id leo in vitae turpis massa sed elementum tempus egestas
+                sed sed risus pretium quam vulputate dignissim"
+              </p>
+            </div>
+
+            <div class="about-directors__alt-icons">
+              <a href="https://twitter.com/electriqmrkting" target="_blank">
+                <span
+                  class="iconify"
+                  data-icon="uil:twitter"
+                  data-width="24"
+                ></span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/electriqmarketing/"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="uil:linkedin"
+                  data-width="24"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <button
+            id="cristian-duncan"
+            class="about-directors__card-button"
+            onclick="handleShowCard(this.id)"
+          >
+            <span
+              class="iconify about-directors__icon"
+              data-icon="mdi:plus-thick"
+              data-width="24"
+            ></span>
+          </button>
+        </div>
+
+        <div class="about-directors__card">
+          <img
+            class="about-directors__portrait"
+            src="/assets/about/about-directors-cruz-hamer.jpg"
+            alt="Cruz Hamer"
+          />
+
+          <div class="about-directors__profile">
+            <h2
+              class="about-directors__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Cruz Hamer
+            </h2>
+            <span class="subheading--sm">Co-founder & CTO</span>
+          </div>
+
+          <div class="about-directors__alt-card">
+            <div class="about-directors__alt-text">
+              <h2
+                class="about-directors__alt-name heading-3 accent-text--rapture-blue"
+              >
+                Cruz Hamer
+              </h2>
+
+              <p class="about-directors__alt-quote body--sm">
+                "senectus et netus et malesuada fames ac turpis egestas sed
+                tempus urna et pharetra pharetra massa massa ultricies"
+              </p>
+            </div>
+
+            <div class="about-directors__alt-icons">
+              <a href="https://twitter.com/electriqmrkting" target="_blank">
+                <span
+                  class="iconify"
+                  data-icon="uil:twitter"
+                  data-width="24"
+                ></span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/electriqmarketing/"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="uil:linkedin"
+                  data-width="24"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <button
+            id="cruz-hamer"
+            class="about-directors__card-button"
+            onclick="handleShowCard(this.id)"
+          >
+            <span
+              class="iconify about-directors__icon"
+              data-icon="mdi:plus-thick"
+              data-width="24"
+            ></span>
+          </button>
+        </div>
+
+        <div class="about-directors__card">
+          <img
+            class="about-directors__portrait"
+            src="/assets/about/about-directors-drake-heaton.jpg"
+            alt="Drake Heaton"
+          />
+
+          <div class="about-directors__profile">
+            <h2
+              class="about-directors__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Drake Heaton
+            </h2>
+            <span class="subheading--sm">Business Development Lead</span>
+          </div>
+
+          <div class="about-directors__alt-card">
+            <div class="about-directors__alt-text">
+              <h2
+                class="about-directors__alt-name heading-3 accent-text--rapture-blue"
+              >
+                Drake Heaton
+              </h2>
+
+              <p class="about-directors__alt-quote body--sm">
+                "gravida in fermentum et sollicitudin ac orci phasellus egestas
+                tellus rutrum tellus pellentesque eu tincidunt tortor aliquam
+                nulla"
+              </p>
+            </div>
+
+            <div class="about-directors__alt-icons">
+              <a href="https://twitter.com/electriqmrkting" target="_blank">
+                <span
+                  class="iconify"
+                  data-icon="uil:twitter"
+                  data-width="24"
+                ></span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/electriqmarketing/"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="uil:linkedin"
+                  data-width="24"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <button
+            id="drake-heaton"
+            class="about-directors__card-button"
+            onclick="handleShowCard(this.id)"
+          >
+            <span
+              class="iconify about-directors__icon"
+              data-icon="mdi:plus-thick"
+              data-width="24"
+            ></span>
+          </button>
+        </div>
+
+        <div class="about-directors__card">
+          <img
+            class="about-directors__portrait"
+            src="/assets/about/about-directors-griffin-wise.jpg"
+            alt="Griffin Wise"
+          />
+
+          <div class="about-directors__profile">
+            <h2
+              class="about-directors__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Griffin Wise
+            </h2>
+            <span class="subheading--sm">Lead Marketing</span>
+          </div>
+
+          <div class="about-directors__alt-card">
+            <div class="about-directors__alt-text">
+              <h2
+                class="about-directors__alt-name heading-3 accent-text--rapture-blue"
+              >
+                Griffin Wise
+              </h2>
+
+              <p class="about-directors__alt-quote body--sm">
+                "nullam ac tortor vitae purus faucibus ornare suspendisse sed
+                nisi lacus sed viverra tellus in hac habitasse platea"
+              </p>
+            </div>
+
+            <div class="about-directors__alt-icons">
+              <a href="https://twitter.com/electriqmrkting" target="_blank">
+                <span
+                  class="iconify"
+                  data-icon="uil:twitter"
+                  data-width="24"
+                ></span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/electriqmarketing/"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="uil:linkedin"
+                  data-width="24"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <button
+            id="griffin-wise"
+            class="about-directors__card-button"
+            onclick="handleShowCard(this.id)"
+          >
+            <span
+              class="iconify about-directors__icon"
+              data-icon="mdi:plus-thick"
+              data-width="24"
+            ></span>
+          </button>
+        </div>
+
+        <div class="about-directors__card">
+          <img
+            class="about-directors__portrait"
+            src="/assets/about/about-directors-aden-allan.jpg"
+            alt="Aden Allan"
+          />
+
+          <div class="about-directors__profile">
+            <h2
+              class="about-directors__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Aden Allan
+            </h2>
+            <span class="subheading--sm">Head of Talent</span>
+          </div>
+
+          <div class="about-directors__alt-card">
+            <div class="about-directors__alt-text">
+              <h2
+                class="about-directors__alt-name heading-3 accent-text--rapture-blue"
+              >
+                Aden Allan
+              </h2>
+
+              <p class="about-directors__alt-quote body--sm">
+                "ac turpis egestas maecenas pharetra convallis posuere morbi leo
+                urna molestie at elementum eu facilisis sed odio morbi"
+              </p>
+            </div>
+
+            <div class="about-directors__alt-icons">
+              <a href="https://twitter.com/electriqmrkting" target="_blank">
+                <span
+                  class="iconify"
+                  data-icon="uil:twitter"
+                  data-width="24"
+                ></span>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/electriqmarketing/"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="uil:linkedin"
+                  data-width="24"
+                ></span>
+              </a>
+            </div>
+          </div>
+
+          <button
+            id="aden-allan"
+            class="about-directors__card-button"
+            onclick="handleShowCard(this.id)"
+          >
+            <span
+              class="iconify about-directors__icon"
+              data-icon="mdi:plus-thick"
+              data-width="24"
+            ></span>
+          </button>
+        </div>
       </div>
 
-      <div class="home-features__graphic-container">
+      <div class="about-directors__graphic-container-01">
         <img
-          class="home-features__graphic"
-          src="/assets/home/home-features-graphic.svg"
+          class="about-directors__graphic-01"
+          src="/assets/about/about-directors-graphic-01.svg"
           alt=""
         />
       </div>
 
-      <div class="home-features__items-container">
-        <div class="home-features__items">
-          <img
-            class="home-features__icon"
-            src="/assets/home/home-features-experienced-individuals.svg"
-            alt="Experienced Individuals"
-          />
-          <div class="home-features__text-container">
-            <h3
-              class="home-features__item-heading heading-3 accent-text--coral"
-            >
-              Experienced Individuals
-            </h3>
-            <p class="home-features__desc body--lg">
-              Our network is made up of highly experienced professionals who are
-              passionate about what they do.
-            </p>
-          </div>
-        </div>
-
-        <div class="home-features__items">
-          <img
-            class="home-features__icon"
-            src="/assets/home/home-features-easy-to-implement.svg"
-            alt="Easy to Implement"
-          />
-          <div class="home-features__text-container">
-            <h3
-              class="home-features__item-heading heading-3 accent-text--coral"
-            >
-              Easy to Implement
-            </h3>
-            <p class="home-features__desc body--lg">
-              Our processes have been refined over years of implementation
-              meaning our teams always deliver.
-            </p>
-          </div>
-        </div>
-
-        <div class="home-features__items">
-          <img
-            class="home-features__icon"
-            src="/assets/home/home-features-enhanced-productivity.svg"
-            alt="Enhanced Productivity"
-          />
-          <div class="home-features__text-container">
-            <h3
-              class="home-features__item-heading heading-3 accent-text--coral"
-            >
-              Enhanced Productivity
-            </h3>
-            <p class="home-features__desc body--lg">
-              Our customized platform with in-built analytics helps you manage
-              your distributed teams.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="home-testimonials">
-      <h1 class="home-testimonials__heading heading-2">
-        Delivering real results for top companies. Some of our
-        <span class="accent-text--rapture-blue">success stories.</span>
-      </h1>
-
-      <div class="home-testimonials__collection">
-        <!-- Kady Baker -->
-        <div class="home-testimonials__profiles-container">
-          <div class="home-testimonials__quote-container">
-            <img
-              class="home-testimonials__quote-graphic"
-              src="/assets/home/home-testimonials-air-quotes.svg"
-              alt=""
-            />
-            <p class="home-testimonials__quote-text body--sm">
-              “The team perfectly fit the specialized skill set required. They
-              focused on the most essential features helping us launch the
-              platform eight months faster than planned.”
-            </p>
-          </div>
-
-          <div class="home-testimonials__profile">
-            <h2
-              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
-            >
-              Kady baker
-            </h2>
-            <span class="subheading--sm">Product Manager at Bookmark</span>
-          </div>
-
-          <img
-            class="home-testimonials__portrait"
-            src="/assets/home/home-testimonials-kady-baker.jpg"
-            alt="Kady Baker"
-          />
-        </div>
-
-        <!-- Aiysha Reese -->
-        <div class="home-testimonials__profiles-container">
-          <div class="home-testimonials__quote-container">
-            <img
-              class="home-testimonials__quote-graphic"
-              src="/assets/home/home-testimonials-air-quotes.svg"
-              alt=""
-            />
-            <p class="home-testimonials__quote-text body--sm">
-              “We needed to automate our entire onboarding process. The team
-              came in and built out the whole journey. Since going live, user
-              retention has gone through the roof!”
-            </p>
-          </div>
-
-          <div class="home-testimonials__profile">
-            <h2
-              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
-            >
-              Aiysha Reese
-            </h2>
-            <span class="subheading--sm">Founder of Manage</span>
-          </div>
-
-          <img
-            class="home-testimonials__portrait"
-            src="/assets/home/home-testimonials-aiysha-reese.jpg"
-            alt="Aiysha Reese"
-          />
-        </div>
-
-        <!-- Arthur Clarke -->
-        <div class="home-testimonials__profiles-container">
-          <div class="home-testimonials__quote-container">
-            <img
-              class="home-testimonials__quote-graphic"
-              src="/assets/home/home-testimonials-air-quotes.svg"
-              alt=""
-            />
-            <p class="home-testimonials__quote-text body--sm">
-              “Amazing. Our team helped us build an app that delivered a new
-              experience for hiring a physio. The launch was an instant success
-              with 100k downloads in the first month.”
-            </p>
-          </div>
-
-          <div class="home-testimonials__profile">
-            <h2
-              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
-            >
-              Arthur Clarke
-            </h2>
-            <span class="subheading--sm">Co-founder of MyPhysio</span>
-          </div>
-
-          <img
-            class="home-testimonials__portrait"
-            src="/assets/home/home-testimonials-arthur-clarke.jpg"
-            alt="Arthur Clarke"
-          />
-        </div>
-      </div>
-
-      <div class="home-testimonials__graphic-container-01">
-        <img src="/assets/home/home-testimonials-graphic-01.svg" alt="" />
-      </div>
-
-      <div class="home-testimonials__graphic-container-02">
-        <img src="/assets/home/home-testimonials-graphic-02.svg" alt="" />
+      <div class="about-directors__graphic-container-02">
+        <img
+          class="about-directors__graphic-02"
+          src="/assets/about/about-directors-graphic-02.svg"
+          alt=""
+        />
       </div>
     </section>
 
