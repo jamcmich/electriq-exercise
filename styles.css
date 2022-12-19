@@ -353,6 +353,7 @@ button {
 /* ----- Sections ----- */
 section {
   position: relative;
+  z-index: 0;
 
   display: flex;
   flex-direction: column;
@@ -366,10 +367,13 @@ section {
 
 /* ----- Footer ----- */
 .footer {
+  position: relative;
+  z-index: 0;
 }
 
 .footer-top {
   position: relative;
+  z-index: 0;
 
   display: flex;
   flex-direction: column;
@@ -389,7 +393,7 @@ section {
 
 .footer-top__graphic {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 
   bottom: 0;
   left: 0;
@@ -778,7 +782,7 @@ section {
 
 .home-landing__graphic-container-01 {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   bottom: 0;
   left: 8px;
   right: 8px;
@@ -848,7 +852,7 @@ section {
 
   .home-landing__graphic-container-02 {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -883,7 +887,7 @@ section {
 
 .home-features__graphic-container {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   top: 0;
   right: 0;
 
@@ -1034,7 +1038,7 @@ section {
 
 .home-testimonials__quote-graphic {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   top: 0;
   left: 50%;
   transform: translate(-50%, -60%);
@@ -1074,7 +1078,7 @@ section {
 .home-testimonials__graphic-container-01,
 .home-testimonials__graphic-container-02 {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 
   display: flex;
   justify-content: center;
@@ -1153,7 +1157,7 @@ section {
 /* Landing Section */
 .about-landing__graphic {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   bottom: 0;
   right: 0;
   transform: translateY(50%);
@@ -1171,7 +1175,7 @@ section {
 @media screen and (min-width: 768px) {
   .about-landing__graphic {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     bottom: 0;
     right: 0;
     transform: none;
@@ -1324,7 +1328,7 @@ section {
 .about-directors__graphic-container-01,
 .about-directors__graphic-container-02 {
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .about-directors__graphic-container-01 {
@@ -1367,13 +1371,6 @@ section {
   }
 }
 
-/* (Large Laptop) */
-@media screen and (min-width: 1024px) {
-  /* .about-directors__card { */
-  /*   flex: 0 0 33%; */
-  /* } */
-}
-
 /* (Desktop) */
 @media screen and (min-width: 1440px) {
   .about-directors {
@@ -1391,5 +1388,100 @@ section {
   .about-directors__card,
   .about-directors__alt-card {
     flex: 0 0 30%;
+  }
+}
+
+/* Clients Section */
+.about-clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+
+  height: 632px;
+  padding: 88px 24px;
+  background-color: var(--color-sacramento-state-green);
+}
+
+.about-clients__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.about-clients__graphic-container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.about-clients__graphic {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+/* (Laptop) */
+@media screen and (min-width: 768px) {
+  .about-clients {
+    gap: 48px;
+
+    height: 308px;
+    padding: 100px 40px;
+  }
+
+  .about-clients__container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .about-clients__logo {
+    transform: scale(0.75);
+  }
+
+  .about-clients__graphic {
+    position: absolute;
+    transform: none;
+  }
+}
+
+/* (Large Laptop) */
+@media screen and (min-width: 1024px) {
+  .about-clients {
+    gap: 56px;
+    height: 400px;
+
+    padding: 128px 72px;
+  }
+
+  .about-clients__container {
+    gap: 64px;
+  }
+
+  .about-clients__logo {
+    transform: none;
+  }
+}
+
+/* (Desktop) */
+@media screen and (min-width: 1440px) {
+  .about-clients {
+    gap: 64px;
+
+    height: 437px;
+    padding: 140px 165px;
+  }
+
+  .about-clients__container {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .about-clients__logo {
+    transform: scale(1.2);
   }
 }
