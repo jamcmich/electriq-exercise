@@ -50,6 +50,8 @@
 
   /* Spacing */
   --padding-section: 16% 8%;
+  --padding-footer--top: 84px 24px;
+  --padding-footer--bottom: 68px 24px;
 }
 
 /* (Tablet) */
@@ -58,25 +60,25 @@
     /* Typography */
     --font-size-heading-1--lg: 4rem; /* 64px */
     --font-size-heading-1--sm: 4rem; /* 64px */
-    --font-size-heading-2: 2rem; /* 32px */
-    --font-size-heading-3: 1.125rem; /* 18px */
-    --font-size-nav-link: 1.125rem; /* 18px */
-    --font-size-button: 1.125rem; /* 18px */
-    --font-size-body--lg: 0.938rem; /* 15px */
-    --font-size-body--sm: 0.938rem; /* 15px */
-    --font-size-subheading--lg: 0.813rem; /* 15px */
-    --font-size-subheading--sm: 0.813rem; /* 13px */
+    /* --font-size-heading-2: 2rem; !* 32px *! */
+    /* --font-size-heading-3: 1.125rem; !* 18px *! */
+    /* --font-size-nav-link: 1.125rem; !* 18px *! */
+    /* --font-size-button: 1.125rem; !* 18px *! */
+    /* --font-size-body--lg: 0.938rem; !* 15px *! */
+    /* --font-size-body--sm: 0.938rem; !* 15px *! */
+    /* --font-size-subheading--lg: 0.813rem; !* 15px *! */
+    /* --font-size-subheading--sm: 0.813rem; !* 13px *! */
 
     --line-height-heading-1--lg: 3.5rem; /* 56px */
     --line-height-heading-1--sm: 3.5rem; /* 56px */
-    --line-height-heading-2: 2rem; /* 32px */
-    --line-height-heading-3: 1.75rem; /* 28px */
+    /* --line-height-heading-2: 2rem; !* 32px *! */
+    /* --line-height-heading-3: 1.75rem; !* 28px *! */
     --line-height-nav-link: 1.75rem; /* 28px */
     --line-height-button: 1.75rem; /* 28px */
-    --line-height-body--lg: 1.75rem; /* 28px */
+    /* --line-height-body--lg: 1.75rem; !* 28px *! */
     --line-height-body--sm: 1.563rem; /* 25px */
-    --line-height-subheading--lg: 1.563rem; /* 25px */
-    --line-height-subheading--sm: 1.125rem; /* 18px */
+    /* --line-height-subheading--lg: 1.563rem; !* 25px *! */
+    /* --line-height-subheading--sm: 1.125rem; !* 18px *! */
   }
 }
 
@@ -84,27 +86,31 @@
 @media screen and (min-width: 768px) {
   :root {
     /* Typography */
-    --font-size-heading-1--lg: 4rem; /* 64px */
-    --font-size-heading-1--sm: 4rem; /* 64px */
-    --font-size-heading-2: 2rem; /* 32px */
-    --font-size-heading-3: 1.125rem; /* 18px */
-    --font-size-nav-link: 1.125rem; /* 18px */
-    --font-size-button: 1.125rem; /* 18px */
-    --font-size-body--lg: 0.938rem; /* 15px */
-    --font-size-body--sm: 0.938rem; /* 15px */
-    --font-size-subheading--lg: 0.813rem; /* 15px */
-    --font-size-subheading--sm: 0.813rem; /* 13px */
+    /* --font-size-heading-1--lg: 4rem; !* 64px *! */
+    /* --font-size-heading-1--sm: 4rem; !* 64px *! */
+    /* --font-size-heading-2: 2rem; !* 32px *! */
+    /* --font-size-heading-3: 1.125rem; !* 18px *! */
+    /* --font-size-nav-link: 1.125rem; !* 18px *! */
+    /* --font-size-button: 1.125rem; !* 18px *! */
+    /* --font-size-body--lg: 0.938rem; !* 15px *! */
+    /* --font-size-body--sm: 0.938rem; !* 15px *! */
+    /* --font-size-subheading--lg: 0.813rem; !* 15px *! */
+    /* --font-size-subheading--sm: 0.813rem; !* 13px *! */
 
-    --line-height-heading-1--lg: 3.5rem; /* 56px */
-    --line-height-heading-1--sm: 3.5rem; /* 56px */
-    --line-height-heading-2: 2rem; /* 32px */
-    --line-height-heading-3: 1.75rem; /* 28px */
-    --line-height-nav-link: 1.75rem; /* 28px */
-    --line-height-button: 1.75rem; /* 28px */
-    --line-height-body--lg: 1.75rem; /* 28px */
-    --line-height-body--sm: 1.563rem; /* 25px */
-    --line-height-subheading--lg: 1.563rem; /* 25px */
-    --line-height-subheading--sm: 1.125rem; /* 18px */
+    /* --line-height-heading-1--lg: 3.5rem; !* 56px *! */
+    /* --line-height-heading-1--sm: 3.5rem; !* 56px *! */
+    /* --line-height-heading-2: 2rem; !* 32px *! */
+    /* --line-height-heading-3: 1.75rem; !* 28px *! */
+    /* --line-height-nav-link: 1.75rem; !* 28px *! */
+    /* --line-height-button: 1.75rem; !* 28px *! */
+    /* --line-height-body--lg: 1.75rem; !* 28px *! */
+    /* --line-height-body--sm: 1.563rem; !* 25px *! */
+    /* --line-height-subheading--lg: 1.563rem; !* 25px *! */
+    /* --line-height-subheading--sm: 1.125rem; !* 18px *! */
+
+    /* Spacing */
+    --padding-footer--top: 76px 40px;
+    --padding-footer--bottom: 56px 40px;
   }
 }
 
@@ -115,6 +121,10 @@
     --font-size-heading-2: 40px; /* 40px */
 
     --line-height-heading-2: 40px; /* 40px */
+
+    /* Spacing */
+    --padding-footer--top: 48px 128px;
+    --padding-footer--bottom: 48px 128px;
   }
 }
 
@@ -123,26 +133,30 @@
   :root {
     /* Typography */
     --font-size-heading-1--lg: 6.25rem; /* 100px */
-    --font-size-heading-1--sm: 4rem; /* 64px */
+    /* --font-size-heading-1--sm: 4rem; !* 64px *! */
     --font-size-heading-2: 3rem; /* 48px */
-    --font-size-heading-3: 1.125rem; /* 18px */
-    --font-size-nav-link: 1.125rem; /* 18px */
-    --font-size-button: 1.125rem; /* 18px */
+    /* --font-size-heading-3: 1.125rem; !* 18px *! */
+    /* --font-size-nav-link: 1.125rem; !* 18px *! */
+    /* --font-size-button: 1.125rem; !* 18px *! */
     --font-size-body--lg: 1.125rem; /* 18px */
-    --font-size-body--sm: 0.938rem; /* 15px */
-    --font-size-subheading--lg: 0.813rem; /* 15px */
-    --font-size-subheading--sm: 0.813rem; /* 13px */
+    /* --font-size-body--sm: 0.938rem; !* 15px *! */
+    /* --font-size-subheading--lg: 0.813rem; !* 15px *! */
+    /* --font-size-subheading--sm: 0.813rem; !* 13px *! */
 
     --line-height-heading-1--lg: 6.25rem; /* 100px */
-    --line-height-heading-1--sm: 3.5rem; /* 56px */
+    /* --line-height-heading-1--sm: 3.5rem; !* 56px *! */
     --line-height-heading-2: 3rem; /* 48px */
-    --line-height-heading-3: 1.75rem; /* 28px */
-    --line-height-nav-link: 1.75rem; /* 28px */
-    --line-height-button: 1.75rem; /* 28px */
-    --line-height-body--lg: 1.75rem; /* 28px */
-    --line-height-body--sm: 1.563rem; /* 25px */
-    --line-height-subheading--lg: 1.563rem; /* 25px */
-    --line-height-subheading--sm: 1.125rem; /* 18px */
+    /* --line-height-heading-3: 1.75rem; !* 28px *! */
+    /* --line-height-nav-link: 1.75rem; !* 28px *! */
+    /* --line-height-button: 1.75rem; !* 28px *! */
+    /* --line-height-body--lg: 1.75rem; !* 28px *! */
+    /* --line-height-body--sm: 1.563rem; !* 25px *! */
+    /* --line-height-subheading--lg: 1.563rem; !* 25px *! */
+    /* --line-height-subheading--sm: 1.125rem; !* 18px *! */
+
+    /* Spacing */
+    --padding-footer--top: 48px 165px;
+    --padding-footer--bottom: 48px 165px;
   }
 }
 
@@ -351,7 +365,208 @@ a {
 }
 
 a:hover {
-  transition: color 0.2s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+/*
+==========================================================================
+  Footer
+==========================================================================
+*/
+footer {
+  width: 100%;
+}
+
+/* Footer Top */
+.footer-top {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  padding: var(--padding-footer--top);
+  background-color: var(--color-light-coral);
+}
+
+.footer-top__heading {
+  color: var(--color-sacramento-state-green);
+  text-align: center;
+}
+
+.footer-top__graphic {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  padding: var(--padding-footer--bottom);
+  background-color: var(--color-dark-green);
+}
+
+.footer-bottom__group:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-bottom__tablet-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-bottom__logo {
+  max-width: 96px;
+}
+
+.footer-bottom__links-container {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom__link {
+  color: var(--color-white);
+}
+
+.footer-bottom__link:hover {
+  color: var(--color-light-coral);
+}
+
+.footer-bottom__group:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-bottom__icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-bottom__icon {
+  width: 32px;
+  height: 32px;
+
+  color: var(--color-white);
+
+  transition: color 0.1s ease-in-out;
+}
+
+.footer-bottom__icon:hover {
+  color: var(--color-light-coral);
+}
+
+.footer-bottom__contact-info,
+.footer-bottom__copyright {
+  color: var(--color-white);
+  text-align: center;
+  opacity: 0.6;
+}
+
+/* (Laptop) */
+@media screen and (min-width: 768px) {
+  /* Footer Top */
+  .footer-top {
+    flex-direction: row;
+    gap: 84px;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom {
+    gap: 32px;
+  }
+
+  .footer-bottom__group:nth-child(1),
+  .footer-bottom__group:nth-child(2) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  .footer-bottom__tablet-layout {
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: 100px;
+  }
+
+  .footer-bottom__contact-info,
+  .footer-bottom__copyright {
+    text-align: right;
+  }
+}
+
+/* (Large Laptop) */
+@media screen and (min-width: 1024px) {
+  .footer-top,
+  .footer-bottom {
+    height: 200px;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom {
+    flex-direction: row;
+  }
+
+  .footer-bottom__group:nth-child(1) {
+    justify-content: flex-start;
+    gap: 72px;
+  }
+
+  .footer-bottom__logo {
+    max-width: 128px;
+  }
+
+  .footer-bottom__contact-info {
+    text-align: left;
+  }
+
+  .footer-bottom__copyright {
+    text-align: right;
+  }
+
+  .footer-bottom__group:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 51px;
+  }
+}
+
+/* (Desktop) */
+@media screen and (min-width: 1440px) {
+  /* Footer Bottom */
+  .footer-bottom__group:nth-child(1) {
+    gap: 124px;
+  }
+
+  .footer-bottom__logo {
+    max-width: 160px;
+  }
 }
 
 /* Buttons */
@@ -478,7 +693,9 @@ button {
   Buttons
 ==========================================================================
 */
-.button-primary {
+.button-primary--default--light,
+.button-primary--default--dark,
+.button-secondary--default--light {
   display: flex;
   flex-shrink: 0;
 
@@ -487,43 +704,58 @@ button {
   font-weight: var(--font-weight--600);
   line-height: var(--line-height-button);
 
-  border: 2px solid var(--color-white);
+  border-width: 2px;
   border-radius: 24px;
+  border-style: solid;
 
   padding: 8px 32px;
   text-align: center;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out,
+    background-color 0.1s ease-in-out;
 }
 
-.button-primary--default {
+/* Primary Light */
+.button-primary--default--light {
   color: var(--color-white);
+  border-color: var(--color-white);
   background-color: transparent;
 }
 
-.button-primary--default--dark {
-  color: var(--color-sacramento-state-green);
-  border-color: var(--color-sacramento-state-green);
-}
-
-.button-primary--hover:hover {
+.button-primary--default--light:hover {
   color: var(--color-dark-green);
   background-color: var(--color-white);
 }
 
-.button-primary--hover--dark:hover {
-  color: var(--color-white);
-  background-color: var(--color-sacramento-state-green);
-  border-color: var(--color-sacramento-state-green);
-}
-
-.button-primary--disabled {
-  opacity: 25%;
-}
-
-.button-primary--disabled--dark {
+/* Primary Dark */
+.button-primary--default--dark {
   color: var(--color-sacramento-state-green);
   border-color: var(--color-sacramento-state-green);
+  background-color: transparent;
+}
+
+.button-primary--default--dark:hover {
+  color: var(--color-white);
+  background-color: var(--color-sacramento-state-green);
+}
+
+/* Secondary Light */
+.button-secondary--default--light {
+  color: var(--color-dark-green);
+  border-color: var(--color-white);
+  background-color: var(--color-white);
+}
+
+.button-secondary--hover--light:hover {
+  color: var(--color-dark-green);
+  border-color: var(--color-rapture-blue);
+  background-color: var(--color-rapture-blue);
+}
+
+/* Disabled State */
+.button--disabled {
   opacity: 25%;
+  cursor: default;
+  pointer-events: none;
 }
 
 /* --- Modifiers --- */
