@@ -1,0 +1,360 @@
+<!-- ABOUT PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About myteam</title>
+  </head>
+
+  <body>
+    <!-- Side Nav (Overlay) -->
+    <div class="side-nav__overlay" onclick="handleCloseMenu()"></div>
+
+    <!-- Side Nav (Secondary) -->
+    <nav class="side-nav">
+      <div class="side-nav__button-container">
+        <button class="side-nav__menu-button" onclick="handleCloseMenu()">
+          <span class="iconify" data-icon="mdi:close" data-width="32"></span>
+        </button>
+      </div>
+
+      <div class="side-nav__links-container">
+        <a class="side-nav__link nav-link" href="/">home</a>
+        <a class="side-nav__link nav-link" href="/pages/about.html">about</a>
+      </div>
+
+      <a href="/pages/contact.html">
+        <button class="button-primary--default--light">Contact Us</button>
+      </a>
+    </nav>
+
+    <!-- Main Nav (Primary) -->
+    <nav class="main-nav">
+      <a href="/">
+        <img
+          class="main-nav__logo"
+          src="/assets/logo-myteam.svg"
+          alt="myteam - Home Page"
+        />
+      </a>
+
+      <button class="main-nav__menu-button" onclick="handleOpenMenu()">
+        <span class="iconify" data-icon="mdi:menu" data-width="32"></span>
+      </button>
+
+      <div class="main-nav__links-container">
+        <a class="main-nav__link nav-link" href="/">home</a>
+        <a class="main-nav__link nav-link" href="/pages/about.html">about</a>
+      </div>
+
+      <a class="main-nav__button-container" href="/pages/contact.html">
+        <button class="button-primary--default--light">Contact Us</button>
+      </a>
+    </nav>
+
+    <!-- Landing Section -->
+    <section class="home-landing">
+      <div class="home-landing__text-container about-landing__text-container">
+        <h1 class="home-landing__heading heading-1--lg">About</h1>
+        <p
+          class="home-landing__paragraph body--lg accent-element--coral about-landing__paragraph"
+        >
+          We help companies build dynamic teams made up of top global talent.
+          Using our network of passionate professionals we drive innovation and
+          deliver incredible outcomes. Talented, diverse teams shape the best
+          products and experiences. We’ll bring those teams to you.
+        </p>
+      </div>
+
+      <img
+        class="about-landing__graphic"
+        src="/assets/about/about-landing-graphic.svg"
+        alt=""
+      />
+    </section>
+
+    <!-- Features Section -->
+    <section class="home-features">
+      <div class="home-features__heading-container">
+        <h1 class="home-features__heading heading-2 accent-element--coral">
+          Build & manage distributed teams like no one else.
+        </h1>
+      </div>
+
+      <div class="home-features__graphic-container">
+        <img
+          class="home-features__graphic"
+          src="/assets/home/home-features-graphic.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="home-features__items-container">
+        <div class="home-features__items">
+          <img
+            class="home-features__icon"
+            src="/assets/home/home-features-experienced-individuals.svg"
+            alt="Experienced Individuals"
+          />
+          <div class="home-features__text-container">
+            <h3
+              class="home-features__item-heading heading-3 accent-text--coral"
+            >
+              Experienced Individuals
+            </h3>
+            <p class="home-features__desc body--lg">
+              Our network is made up of highly experienced professionals who are
+              passionate about what they do.
+            </p>
+          </div>
+        </div>
+
+        <div class="home-features__items">
+          <img
+            class="home-features__icon"
+            src="/assets/home/home-features-easy-to-implement.svg"
+            alt="Easy to Implement"
+          />
+          <div class="home-features__text-container">
+            <h3
+              class="home-features__item-heading heading-3 accent-text--coral"
+            >
+              Easy to Implement
+            </h3>
+            <p class="home-features__desc body--lg">
+              Our processes have been refined over years of implementation
+              meaning our teams always deliver.
+            </p>
+          </div>
+        </div>
+
+        <div class="home-features__items">
+          <img
+            class="home-features__icon"
+            src="/assets/home/home-features-enhanced-productivity.svg"
+            alt="Enhanced Productivity"
+          />
+          <div class="home-features__text-container">
+            <h3
+              class="home-features__item-heading heading-3 accent-text--coral"
+            >
+              Enhanced Productivity
+            </h3>
+            <p class="home-features__desc body--lg">
+              Our customized platform with in-built analytics helps you manage
+              your distributed teams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="home-testimonials">
+      <h1 class="home-testimonials__heading heading-2">
+        Delivering real results for top companies. Some of our
+        <span class="accent-text--rapture-blue">success stories.</span>
+      </h1>
+
+      <div class="home-testimonials__collection">
+        <!-- Kady Baker -->
+        <div class="home-testimonials__profiles-container">
+          <div class="home-testimonials__quote-container">
+            <img
+              class="home-testimonials__quote-graphic"
+              src="/assets/home/home-testimonials-air-quotes.svg"
+              alt=""
+            />
+            <p class="home-testimonials__quote-text body--sm">
+              “The team perfectly fit the specialized skill set required. They
+              focused on the most essential features helping us launch the
+              platform eight months faster than planned.”
+            </p>
+          </div>
+
+          <div class="home-testimonials__profile">
+            <h2
+              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Kady baker
+            </h2>
+            <span class="subheading--sm">Product Manager at Bookmark</span>
+          </div>
+
+          <img
+            class="home-testimonials__portrait"
+            src="/assets/home/home-testimonials-kady-baker.jpg"
+            alt="Kady Baker"
+          />
+        </div>
+
+        <!-- Aiysha Reese -->
+        <div class="home-testimonials__profiles-container">
+          <div class="home-testimonials__quote-container">
+            <img
+              class="home-testimonials__quote-graphic"
+              src="/assets/home/home-testimonials-air-quotes.svg"
+              alt=""
+            />
+            <p class="home-testimonials__quote-text body--sm">
+              “We needed to automate our entire onboarding process. The team
+              came in and built out the whole journey. Since going live, user
+              retention has gone through the roof!”
+            </p>
+          </div>
+
+          <div class="home-testimonials__profile">
+            <h2
+              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Aiysha Reese
+            </h2>
+            <span class="subheading--sm">Founder of Manage</span>
+          </div>
+
+          <img
+            class="home-testimonials__portrait"
+            src="/assets/home/home-testimonials-aiysha-reese.jpg"
+            alt="Aiysha Reese"
+          />
+        </div>
+
+        <!-- Arthur Clarke -->
+        <div class="home-testimonials__profiles-container">
+          <div class="home-testimonials__quote-container">
+            <img
+              class="home-testimonials__quote-graphic"
+              src="/assets/home/home-testimonials-air-quotes.svg"
+              alt=""
+            />
+            <p class="home-testimonials__quote-text body--sm">
+              “Amazing. Our team helped us build an app that delivered a new
+              experience for hiring a physio. The launch was an instant success
+              with 100k downloads in the first month.”
+            </p>
+          </div>
+
+          <div class="home-testimonials__profile">
+            <h2
+              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
+            >
+              Arthur Clarke
+            </h2>
+            <span class="subheading--sm">Co-founder of MyPhysio</span>
+          </div>
+
+          <img
+            class="home-testimonials__portrait"
+            src="/assets/home/home-testimonials-arthur-clarke.jpg"
+            alt="Arthur Clarke"
+          />
+        </div>
+      </div>
+
+      <div class="home-testimonials__graphic-container-01">
+        <img src="/assets/home/home-testimonials-graphic-01.svg" alt="" />
+      </div>
+
+      <div class="home-testimonials__graphic-container-02">
+        <img src="/assets/home/home-testimonials-graphic-02.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <h2 class="footer-top__heading heading-2">Ready to get started?</h2>
+        <a class="footer-top__button-container" href="/pages/contact.html">
+          <button class="button-primary--default--dark">Contact Us</button>
+        </a>
+
+        <img
+          class="footer-top__graphic"
+          src="/assets/footer/footer-graphic.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom__group-1">
+          <a href="/">
+            <img
+              class="footer-bottom__logo"
+              src="/assets/logo-myteam.svg"
+              alt="myteam - Home Page"
+            />
+          </a>
+
+          <div class="footer-bottom__links">
+            <a class="footer-bottom__link nav-link" href="/">home</a>
+            <a class="footer-bottom__link nav-link" href="/pages/about.html"
+              >about</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom__group-2">
+          <p class="footer-bottom__contact-info body--sm">
+            987 Hillcrest Lane<br />
+            Irvine, CA<br />
+            California 92714<br />
+            Call Us: 949-833-7432
+          </p>
+        </div>
+
+        <div class="footer-bottom__group-3">
+          <a href="https://www.facebook.com/ElectriqMarketing/" target="_blank">
+            <span
+              class="iconify"
+              data-icon="uil:facebook"
+              data-width="28"
+            ></span>
+          </a>
+          <a
+            href="https://www.pinterest.com/electrIQmarketing/"
+            target="_blank"
+          >
+            <span
+              class="iconify"
+              data-icon="uiw:pinterest"
+              data-width="28"
+            ></span>
+          </a>
+          <a href="https://twitter.com/electriqmrkting" target="_blank">
+            <span
+              class="iconify"
+              data-icon="uil:twitter"
+              data-width="28"
+            ></span>
+          </a>
+        </div>
+
+        <div class="footer-bottom__group-4">
+          <p class="footer-bottom__copyright">
+            Copyright 2020. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="../main.js"></script>
+
+    <!-- Load icon data from Iconify API -->
+    <script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
+  </body>
+</html>

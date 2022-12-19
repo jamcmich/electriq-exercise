@@ -640,23 +640,27 @@ section {
 .accent-element--coral::before {
   display: block;
   content: "";
-  width: 40px;
+  width: 50px;
   margin-bottom: 32px;
   border-top: 3px solid var(--color-light-coral);
+}
+
+.accent-element--rapture-blue::before {
+  display: block;
+  content: "";
+  width: 50px;
+  margin-bottom: 80px;
+  border-top: 3px solid var(--color-rapture-blue);
 }
 
 /* (Desktop) */
 @media screen and (min-width: 1440px) {
   .accent-element--coral::before {
-    margin-bottom: 54px;
+    margin-bottom: 40px;
   }
 
-  .accent-element--rapture-blue::before {
-    display: block;
-    content: "";
-    width: 50px;
-    margin-bottom: 80px;
-    border-top: 3px solid var(--color-rapture-blue);
+  .accent-element--coral::before {
+    margin-bottom: 54px;
   }
 }
 
@@ -684,7 +688,7 @@ section {
   padding: 8px 32px;
   text-align: center;
   transition: color 0.1s ease-in-out, border-color 0.1s ease-in-out,
-  background-color 0.1s ease-in-out;
+    background-color 0.1s ease-in-out;
 }
 
 /* ----- Primary Light ----- */
@@ -750,7 +754,7 @@ section {
 ==========================================================================
 */
 
-/* ---- ABOUT PAGE ---- */
+/* ---- HOME PAGE ---- */
 /* Landing Section */
 .home-landing {
   min-height: 100vh;
@@ -1107,5 +1111,49 @@ section {
 
   .home-testimonials__heading {
     max-width: 90%;
+  }
+}
+
+/* ---- ABOUT PAGE ---- */
+/* Landing Section */
+.about-landing__graphic {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-landing__paragraph::before {
+  display: none;
+}
+
+/* (Laptop) */
+@media screen and (min-width: 768px) {
+  .about-landing__graphic {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    transform: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* (Desktop) */
+@media screen and (min-width: 1440px) {
+  .about-landing__text-container {
+    align-items: center;
+  }
+
+  .about-landing__paragraph::before {
+    display: block;
   }
 }
