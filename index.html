@@ -21,12 +21,12 @@
 
   <body>
     <!-- Side Nav (Overlay) -->
-    <div class="side-nav__overlay"></div>
+    <div class="side-nav__overlay" onclick="handleCloseMenu()"></div>
 
     <!-- Side Nav (Secondary) -->
     <nav class="side-nav">
       <div class="side-nav__button-container">
-        <button class="side-nav__button" onclick="handleCloseMenu()">
+        <button class="side-nav__menu-button" onclick="handleCloseMenu()">
           <span class="iconify" data-icon="mdi:close" data-width="32"></span>
         </button>
       </div>
@@ -41,28 +41,26 @@
 
     <!-- Main Nav (Primary) -->
     <nav class="main-nav">
-      <div class="nav__main-bar">
-        <img class="nav__logo" src="/assets/logo-myteam.svg" alt="" />
-        <button
-          class="nav__open-menu-button nav__show-until"
-          onclick="handleOpenMenu()"
-        >
-          <span class="iconify" data-icon="mdi:menu" data-width="32"></span>
-        </button>
+      <a href="/">
+        <img
+          class="main-nav__logo"
+          src="/assets/logo-myteam.svg"
+          alt="myteam - Home Page"
+        />
+      </a>
 
-        <ul class="nav__links nav__links--horizontal no-bullets">
-          <li class="nav__link-item">
-            <a class="nav-link">home</a>
-          </li>
-          <li class="nav__link-item">
-            <a class="nav-link">about us</a>
-          </li>
-        </ul>
+      <button class="main-nav__menu-button" onclick="handleOpenMenu()">
+        <span class="iconify" data-icon="mdi:menu" data-width="32"></span>
+      </button>
 
-        <button class="nav-link button-primary--default--light nav__hide-until">
-          contact us
-        </button>
+      <div class="main-nav__links-container">
+        <a class="main-nav__link nav-link" href="">home</a>
+        <a class="main-nav__link nav-link" href="">about</a>
       </div>
+
+      <button class="main-nav__contact-button button-primary--default--light">
+        Contact Us
+      </button>
     </nav>
 
     <!-- Landing Section -->

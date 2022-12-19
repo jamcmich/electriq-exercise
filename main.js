@@ -4,6 +4,7 @@ const handleOpenMenu = () => {
 
   const overlay = document.querySelector(".side-nav__overlay");
   overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+  overlay.style.pointerEvents = "auto";
 
   document.body.style.overflow = "hidden";
 };
@@ -14,6 +15,7 @@ const handleCloseMenu = () => {
 
   const overlay = document.querySelector(".side-nav__overlay");
   overlay.style.backgroundColor = "rgba(0, 0, 0, 0)";
+  overlay.style.pointerEvents = "none";
 
   document.body.style.overflow = "auto";
 };
