@@ -61,10 +61,8 @@
         <a class="main-nav__link nav-link" href="/pages/about.html">about</a>
       </div>
 
-      <a href="/pages/contact.html">
-        <button class="main-nav__contact-button button-primary--default--light">
-          Contact Us
-        </button>
+      <a class="main-nav__button-container" href="/pages/contact.html">
+        <button class="button-primary--default--light">Contact Us</button>
       </a>
     </nav>
 
@@ -286,17 +284,13 @@
         <img src="/assets/about/about-testimonials-graphic-02.svg" alt="" />
       </div>
     </section>
-    </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="footer-top">
         <h2 class="footer-top__heading heading-2">Ready to get started?</h2>
-
-        <a href="/pages/contact.html">
-          <button class="footer-top__button button-primary--default--dark">
-            Contact Us
-          </button>
+        <a class="footer-top__button-container" href="/pages/contact.html">
+          <button class="button-primary--default--dark">Contact Us</button>
         </a>
 
         <img
@@ -307,61 +301,61 @@
       </div>
 
       <div class="footer-bottom">
-        <!-- Footer Group 1 -->
-        <div class="footer-bottom__group">
-          <div class="footer-bottom__tablet-layout">
-            <a href="/">
-              <img
-                class="footer-bottom__logo"
-                src="/assets/logo-myteam.svg"
-                alt="myteam - Home Page"
-              />
-            </a>
+        <div class="footer-bottom__group-1">
+          <a href="/">
+            <img
+              class="footer-bottom__logo"
+              src="/assets/logo-myteam.svg"
+              alt="myteam - Home Page"
+            />
+          </a>
 
-            <div class="footer-bottom__links-container">
-              <a class="footer-bottom__link body--sm" href="/">home</a>
-              <a class="footer-bottom__link body--sm" href="/pages/about.html">about</a>
-            </div>
+          <div class="footer-bottom__links">
+            <a class="footer-bottom__link nav-link" href="/">home</a>
+            <a class="footer-bottom__link nav-link" href="/pages/about.html"
+              >about</a
+            >
           </div>
+        </div>
 
+        <div class="footer-bottom__group-2">
           <p class="footer-bottom__contact-info body--sm">
             987 Hillcrest Lane<br />
             Irvine, CA<br />
             California 92714<br />
-            Call Us: 949-833-7432<br />
+            Call Us: 949-833-7432
           </p>
         </div>
 
-        <!-- Footer Group 2 -->
-        <div class="footer-bottom__group">
-          <div class="footer-bottom__icons-container">
-            <a
-              href="https://www.facebook.com/ElectriqMarketing/"
-              target="_blank"
-            >
-              <span
-                class="footer-bottom__icon iconify"
-                data-icon="uil:facebook"
-              ></span>
-            </a>
-            <a
-              href="https://www.pinterest.com/electrIQmarketing/"
-              target="_blank"
-            >
-              <span
-                class="footer-bottom__icon iconify"
-                data-icon="carbon:logo-pinterest"
-              ></span>
-            </a>
-            <a href="https://twitter.com/electriqmrkting" target="_blank">
-              <span
-                class="footer-bottom__icon iconify"
-                data-icon="uil:twitter"
-              ></span>
-            </a>
-          </div>
+        <div class="footer-bottom__group-3">
+          <a href="https://www.facebook.com/ElectriqMarketing/" target="_blank">
+            <span
+              class="iconify"
+              data-icon="uil:facebook"
+              data-width="28"
+            ></span>
+          </a>
+          <a
+            href="https://www.pinterest.com/electrIQmarketing/"
+            target="_blank"
+          >
+            <span
+              class="iconify"
+              data-icon="uiw:pinterest"
+              data-width="28"
+            ></span>
+          </a>
+          <a href="https://twitter.com/electriqmrkting" target="_blank">
+            <span
+              class="iconify"
+              data-icon="uil:twitter"
+              data-width="28"
+            ></span>
+          </a>
+        </div>
 
-          <p class="footer-bottom__copyright body--sm">
+        <div class="footer-bottom__group-4">
+          <p class="footer-bottom__copyright">
             Copyright 2020. All Rights Reserved
           </p>
         </div>
