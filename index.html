@@ -22,11 +22,11 @@
 
   <body>
     <!-- Side Nav (Overlay) -->
-    <div
+    <nav
       class="side-nav__overlay"
       onclick="handleCloseMenu()"
       aria-label="Mobile Navigation Menu Overlay"
-    ></div>
+    ></nav>
 
     <!-- Side Nav (Secondary) -->
     <nav class="side-nav" aria-label="Mobile Navigation Menu">
@@ -60,18 +60,33 @@
           />
         </a>
 
-        <button class="main-nav__menu-button" onclick="handleOpenMenu()">
+        <button
+          class="main-nav__menu-button"
+          onclick="handleOpenMenu()"
+          aria-label="Open Mobile Navigation Menu"
+        >
           <span class="iconify" data-icon="mdi:menu" data-width="32"></span>
         </button>
 
         <div class="main-nav__links-container">
-          <a class="main-nav__link nav-link" href="./">home</a>
-          <a class="main-nav__link nav-link" href="./about.html">about</a>
+          <a
+            class="main-nav__link nav-link"
+            href="./"
+            aria-label="Visit the myteam Home page"
+            >home</a
+          >
+          <a
+            class="main-nav__link nav-link"
+            href="./about.html"
+            aria-label="Visit the myteam About page"
+            >about</a
+          >
         </div>
 
         <a
           class="main-nav__contact button-primary--default--light"
           href="./contact.html"
+          aria-label="Visit the myteam Contact page"
         >
           Contact Us
         </a>
@@ -310,6 +325,7 @@
         <a
           class="footer-top__button button-primary--default--dark"
           href="./contact.html"
+          aria-label="Visit the myteam Contact page"
         >
           Contact Us
         </a>
@@ -332,8 +348,16 @@
           </a>
 
           <div class="footer-bottom__links" aria-label="Quick Links">
-            <a class="footer-bottom__link nav-link" href="./">home</a>
-            <a class="footer-bottom__link nav-link" href="./about.html"
+            <a
+              class="footer-bottom__link nav-link"
+              href="./"
+              aria-label="Visit the myteam Home page"
+              >home</a
+            >
+            <a
+              class="footer-bottom__link nav-link"
+              href="./about.html"
+              aria-label="Visit the myteam About page"
               >about</a
             >
           </div>
