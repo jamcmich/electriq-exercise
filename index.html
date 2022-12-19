@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css" />
@@ -32,11 +33,13 @@
       </div>
 
       <div class="side-nav__links-container">
-        <a class="side-nav__link nav-link" href="">home</a>
-        <a class="side-nav__link nav-link" href="">about</a>
+        <a class="side-nav__link nav-link" href="/">home</a>
+        <a class="side-nav__link nav-link" href="/pages/about.html">about</a>
       </div>
 
-      <button class="button-primary--default--light">Contact Us</button>
+      <a href="/pages/contact.html">
+        <button class="button-primary--default--light">Contact Us</button>
+      </a>
     </nav>
 
     <!-- Main Nav (Primary) -->
@@ -54,13 +57,15 @@
       </button>
 
       <div class="main-nav__links-container">
-        <a class="main-nav__link nav-link" href="">home</a>
-        <a class="main-nav__link nav-link" href="">about</a>
+        <a class="main-nav__link nav-link" href="/">home</a>
+        <a class="main-nav__link nav-link" href="/pages/about.html">about</a>
       </div>
 
-      <button class="main-nav__contact-button button-primary--default--light">
-        Contact Us
-      </button>
+      <a href="/pages/contact.html">
+        <button class="main-nav__contact-button button-primary--default--light">
+          Contact Us
+        </button>
+      </a>
     </nav>
 
     <!-- Landing Section -->
@@ -116,7 +121,7 @@
           <img
             class="home-features__icon"
             src="/assets/about/about-features-experienced-individuals.svg"
-            alt=""
+            alt="Experienced Individuals"
           />
           <div class="home-features__text-container">
             <h3
@@ -135,7 +140,7 @@
           <img
             class="home-features__icon"
             src="/assets/about/about-features-easy-to-implement.svg"
-            alt=""
+            alt="Easy to Implement"
           />
           <div class="home-features__text-container">
             <h3
@@ -154,7 +159,7 @@
           <img
             class="home-features__icon"
             src="/assets/about/about-features-enhanced-productivity.svg"
-            alt=""
+            alt="Enhanced Productivity"
           />
           <div class="home-features__text-container">
             <h3
@@ -206,7 +211,7 @@
           <img
             class="home-testimonials__portrait"
             src="/assets/about/about-testimonials-kady-baker.jpg"
-            alt=""
+            alt="Kady Baker"
           />
         </div>
 
@@ -237,7 +242,7 @@
           <img
             class="home-testimonials__portrait"
             src="/assets/about/about-testimonials-aiysha-reese.jpg"
-            alt=""
+            alt="Aiysha Reese"
           />
         </div>
 
@@ -268,7 +273,7 @@
           <img
             class="home-testimonials__portrait"
             src="/assets/about/about-testimonials-arthur-clarke.jpg"
-            alt=""
+            alt="Arthur Clarke"
           />
         </div>
       </div>
@@ -281,14 +286,18 @@
         <img src="/assets/about/about-testimonials-graphic-02.svg" alt="" />
       </div>
     </section>
+    </section>
 
     <!-- Footer -->
     <footer>
       <div class="footer-top">
         <h2 class="footer-top__heading heading-2">Ready to get started?</h2>
-        <button class="footer-top__button button-primary--default--dark">
-          Contact Us
-        </button>
+
+        <a href="/pages/contact.html">
+          <button class="footer-top__button button-primary--default--dark">
+            Contact Us
+          </button>
+        </a>
 
         <img
           class="footer-top__graphic"
@@ -301,15 +310,17 @@
         <!-- Footer Group 1 -->
         <div class="footer-bottom__group">
           <div class="footer-bottom__tablet-layout">
-            <img
-              class="footer-bottom__logo"
-              src="/assets/logo-myteam.svg"
-              alt=""
-            />
+            <a href="/">
+              <img
+                class="footer-bottom__logo"
+                src="/assets/logo-myteam.svg"
+                alt="myteam - Home Page"
+              />
+            </a>
 
             <div class="footer-bottom__links-container">
-              <a class="footer-bottom__link body--sm">home</a>
-              <a class="footer-bottom__link body--sm">about</a>
+              <a class="footer-bottom__link body--sm" href="/">home</a>
+              <a class="footer-bottom__link body--sm" href="/pages/about.html">about</a>
             </div>
           </div>
 
