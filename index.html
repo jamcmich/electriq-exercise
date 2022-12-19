@@ -4,10 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./public/assets/favicon.ico" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,10 +22,14 @@
 
   <body>
     <!-- Side Nav (Overlay) -->
-    <div class="side-nav__overlay" onclick="handleCloseMenu()"></div>
+    <div
+      class="side-nav__overlay"
+      onclick="handleCloseMenu()"
+      aria-label="Mobile Navigation Menu Overlay"
+    ></div>
 
     <!-- Side Nav (Secondary) -->
-    <nav class="side-nav">
+    <nav class="side-nav" aria-label="Mobile Navigation Menu">
       <div class="side-nav__button-container">
         <button class="side-nav__menu-button" onclick="handleCloseMenu()">
           <span class="iconify" data-icon="mdi:close" data-width="32"></span>
@@ -33,38 +37,46 @@
       </div>
 
       <div class="side-nav__links-container">
-        <a class="side-nav__link nav-link" href="/">home</a>
-        <a class="side-nav__link nav-link" href="/pages/about.html">about</a>
+        <a class="side-nav__link nav-link" href="./">home</a>
+        <a class="side-nav__link nav-link" href="./about.html">about</a>
       </div>
 
-      <a href="/pages/contact.html">
-        <button class="button-primary--default--light">Contact Us</button>
+      <a
+        class="side-nav__contact button-primary--default--light"
+        href="./contact.html"
+      >
+        Contact Us
       </a>
     </nav>
 
     <!-- Main Nav (Primary) -->
-    <nav class="main-nav">
-      <a href="/">
-        <img
-          class="main-nav__logo"
-          src="/assets/logo-myteam.svg"
-          alt="myteam - Home Page"
-        />
-      </a>
+    <header>
+      <nav class="main-nav" aria-label="Desktop Navigation Menu">
+        <a href="./">
+          <img
+            class="main-nav__logo"
+            src="./public/assets/myteam-logo.svg"
+            alt="myteam - Home Page"
+          />
+        </a>
 
-      <button class="main-nav__menu-button" onclick="handleOpenMenu()">
-        <span class="iconify" data-icon="mdi:menu" data-width="32"></span>
-      </button>
+        <button class="main-nav__menu-button" onclick="handleOpenMenu()">
+          <span class="iconify" data-icon="mdi:menu" data-width="32"></span>
+        </button>
 
-      <div class="main-nav__links-container">
-        <a class="main-nav__link nav-link" href="/">home</a>
-        <a class="main-nav__link nav-link" href="/pages/about.html">about</a>
-      </div>
+        <div class="main-nav__links-container">
+          <a class="main-nav__link nav-link" href="./">home</a>
+          <a class="main-nav__link nav-link" href="./about.html">about</a>
+        </div>
 
-      <a class="main-nav__button-container" href="/pages/contact.html">
-        <button class="button-primary--default--light">Contact Us</button>
-      </a>
-    </nav>
+        <a
+          class="main-nav__contact button-primary--default--light"
+          href="./contact.html"
+        >
+          Contact Us
+        </a>
+      </nav>
+    </header>
 
     <!-- Landing Section -->
     <section class="home-landing">
@@ -84,7 +96,7 @@
       <div class="home-landing__graphic-container-01">
         <img
           class="home-landing__graphic-01"
-          src="/assets/home/home-landing-graphic-01.svg"
+          src="./public/assets/home/home-landing-graphic-01.svg"
           alt=""
         />
       </div>
@@ -92,7 +104,7 @@
       <div class="home-landing__graphic-container-02">
         <img
           class="home-landing__graphic-02"
-          src="/assets/home/home-landing-graphic-02.svg"
+          src="./public/assets/home/home-landing-graphic-02.svg"
           alt=""
         />
       </div>
@@ -101,15 +113,15 @@
     <!-- Features Section -->
     <section class="home-features">
       <div class="home-features__heading-container">
-        <h1 class="home-features__heading heading-2 accent-element--coral">
+        <h2 class="home-features__heading heading-2 accent-element--coral">
           Build & manage distributed teams like no one else.
-        </h1>
+        </h2>
       </div>
 
       <div class="home-features__graphic-container">
         <img
           class="home-features__graphic"
-          src="/assets/home/home-features-graphic.svg"
+          src="./public/assets/home/home-features-graphic.svg"
           alt=""
         />
       </div>
@@ -118,7 +130,7 @@
         <div class="home-features__items">
           <img
             class="home-features__icon"
-            src="/assets/home/home-features-experienced-individuals.svg"
+            src="./public/assets/home/home-features-experienced-individuals.svg"
             alt="Experienced Individuals"
           />
           <div class="home-features__text-container">
@@ -137,7 +149,7 @@
         <div class="home-features__items">
           <img
             class="home-features__icon"
-            src="/assets/home/home-features-easy-to-implement.svg"
+            src="./public/assets/home/home-features-easy-to-implement.svg"
             alt="Easy to Implement"
           />
           <div class="home-features__text-container">
@@ -156,7 +168,7 @@
         <div class="home-features__items">
           <img
             class="home-features__icon"
-            src="/assets/home/home-features-enhanced-productivity.svg"
+            src="./public/assets/home/home-features-enhanced-productivity.svg"
             alt="Enhanced Productivity"
           />
           <div class="home-features__text-container">
@@ -176,10 +188,10 @@
 
     <!-- Testimonials Section -->
     <section class="home-testimonials">
-      <h1 class="home-testimonials__heading heading-2">
+      <h2 class="home-testimonials__heading heading-2">
         Delivering real results for top companies. Some of our
         <span class="accent-text--rapture-blue">success stories.</span>
-      </h1>
+      </h2>
 
       <div class="home-testimonials__collection">
         <!-- Kady Baker -->
@@ -187,7 +199,7 @@
           <div class="home-testimonials__quote-container">
             <img
               class="home-testimonials__quote-graphic"
-              src="/assets/home/home-testimonials-air-quotes.svg"
+              src="./public/assets/home/home-testimonials-air-quotes.svg"
               alt=""
             />
             <p class="home-testimonials__quote-text body--sm">
@@ -198,17 +210,17 @@
           </div>
 
           <div class="home-testimonials__profile">
-            <h2
+            <h3
               class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
             >
               Kady baker
-            </h2>
+            </h3>
             <span class="subheading--sm">Product Manager at Bookmark</span>
           </div>
 
           <img
             class="home-testimonials__portrait"
-            src="/assets/home/home-testimonials-kady-baker.jpg"
+            src="./public/assets/home/home-testimonials-kady-baker.jpg"
             alt="Kady Baker"
           />
         </div>
@@ -218,7 +230,7 @@
           <div class="home-testimonials__quote-container">
             <img
               class="home-testimonials__quote-graphic"
-              src="/assets/home/home-testimonials-air-quotes.svg"
+              src="./public/assets/home/home-testimonials-air-quotes.svg"
               alt=""
             />
             <p class="home-testimonials__quote-text body--sm">
@@ -229,17 +241,17 @@
           </div>
 
           <div class="home-testimonials__profile">
-            <h2
+            <h3
               class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
             >
               Aiysha Reese
-            </h2>
+            </h3>
             <span class="subheading--sm">Founder of Manage</span>
           </div>
 
           <img
             class="home-testimonials__portrait"
-            src="/assets/home/home-testimonials-aiysha-reese.jpg"
+            src="./public/assets/home/home-testimonials-aiysha-reese.jpg"
             alt="Aiysha Reese"
           />
         </div>
@@ -249,7 +261,7 @@
           <div class="home-testimonials__quote-container">
             <img
               class="home-testimonials__quote-graphic"
-              src="/assets/home/home-testimonials-air-quotes.svg"
+              src="./public/assets/home/home-testimonials-air-quotes.svg"
               alt=""
             />
             <p class="home-testimonials__quote-text body--sm">
@@ -260,28 +272,34 @@
           </div>
 
           <div class="home-testimonials__profile">
-            <h2
+            <h3
               class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
             >
               Arthur Clarke
-            </h2>
+            </h3>
             <span class="subheading--sm">Co-founder of MyPhysio</span>
           </div>
 
           <img
             class="home-testimonials__portrait"
-            src="/assets/home/home-testimonials-arthur-clarke.jpg"
+            src="./public/assets/home/home-testimonials-arthur-clarke.jpg"
             alt="Arthur Clarke"
           />
         </div>
       </div>
 
       <div class="home-testimonials__graphic-container-01">
-        <img src="/assets/home/home-testimonials-graphic-01.svg" alt="" />
+        <img
+          src="./public/assets/home/home-testimonials-graphic-01.svg"
+          alt=""
+        />
       </div>
 
       <div class="home-testimonials__graphic-container-02">
-        <img src="/assets/home/home-testimonials-graphic-02.svg" alt="" />
+        <img
+          src="./public/assets/home/home-testimonials-graphic-02.svg"
+          alt=""
+        />
       </div>
     </section>
 
@@ -289,36 +307,39 @@
     <footer class="footer">
       <div class="footer-top">
         <h2 class="footer-top__heading heading-2">Ready to get started?</h2>
-        <a class="footer-top__button-container" href="/pages/contact.html">
-          <button class="button-primary--default--dark">Contact Us</button>
+        <a
+          class="footer-top__button button-primary--default--dark"
+          href="./contact.html"
+        >
+          Contact Us
         </a>
 
         <img
           class="footer-top__graphic"
-          src="/assets/footer/footer-graphic.svg"
+          src="./public/assets/footer/footer-graphic.svg"
           alt=""
         />
       </div>
 
       <div class="footer-bottom">
         <div class="footer-bottom__group-1">
-          <a href="/">
+          <a href="./">
             <img
               class="footer-bottom__logo"
-              src="/assets/logo-myteam.svg"
+              src="./public/assets/myteam-logo.svg"
               alt="myteam - Home Page"
             />
           </a>
 
-          <div class="footer-bottom__links">
-            <a class="footer-bottom__link nav-link" href="/">home</a>
-            <a class="footer-bottom__link nav-link" href="/pages/about.html"
+          <div class="footer-bottom__links" aria-label="Quick Links">
+            <a class="footer-bottom__link nav-link" href="./">home</a>
+            <a class="footer-bottom__link nav-link" href="./about.html"
               >about</a
             >
           </div>
         </div>
 
-        <div class="footer-bottom__group-2">
+        <div class="footer-bottom__group-2" aria-label="Contact Information">
           <p class="footer-bottom__contact-info body--sm">
             987 Hillcrest Lane<br />
             Irvine, CA<br />

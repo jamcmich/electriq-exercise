@@ -46,11 +46,6 @@
   --line-height-body--sm: 1.563rem; /* 25px */
   --line-height-subheading--lg: 1.563rem; /* 25px */
   --line-height-subheading--sm: 1.125rem; /* 18px */
-
-  /* Spacing */
-  --padding-section: 16% 8%;
-  --padding-footer--top: 84px 24px;
-  --padding-footer--bottom: 68px 24px;
 }
 
 /* ----- Tablet ----- */
@@ -69,13 +64,6 @@
 }
 
 /* ----- Laptop ----- */
-@media screen and (min-width: 768px) {
-  :root {
-    /* Spacing */
-    --padding-footer--top: 76px 40px;
-    --padding-footer--bottom: 56px 40px;
-  }
-}
 
 /* ----- Large Laptop ----- */
 @media screen and (min-width: 1024px) {
@@ -84,10 +72,6 @@
     --font-size-heading-2: 40px; /* 40px */
 
     --line-height-heading-2: 40px; /* 40px */
-
-    /* Spacing */
-    --padding-footer--top: 48px 128px;
-    --padding-footer--bottom: 48px 128px;
   }
 }
 
@@ -101,10 +85,6 @@
 
     --line-height-heading-1--lg: 6.25rem; /* 100px */
     --line-height-heading-2: 3rem; /* 48px */
-
-    /* Spacing */
-    --padding-footer--top: 48px 164px;
-    --padding-footer--bottom: 48px 164px;
   }
 }
 
@@ -147,10 +127,6 @@ a:visited {
 a:hover {
   color: var(--color-light-coral);
   transition: color 0.1s ease-in-out;
-}
-
-:focus {
-  outline: 3px solid red !important;
 }
 
 .nav-link {
@@ -208,7 +184,8 @@ button {
   padding-left: 48px;
 
   background-color: var(--color-police-blue);
-  transition: right 0.4s ease-in-out;
+  visibility: hidden;
+  transition: right 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
 .side-nav__button-container {
@@ -239,6 +216,10 @@ button {
 
 .side-nav__link {
   padding: 4px 12px;
+}
+
+.side-nav__contact {
+  width: max-content;
 }
 
 /* (Laptop) */
@@ -286,8 +267,9 @@ button {
   display: none;
 }
 
-.main-nav__button-container {
+.main-nav__contact {
   display: none !important;
+  border-radius: 24px;
 }
 
 /* (Tablet) */
@@ -322,7 +304,7 @@ button {
     margin-left: 48px;
   }
 
-  .main-nav__button-container {
+  .main-nav__contact {
     display: inherit !important;
   }
 }
@@ -388,6 +370,14 @@ section {
 
 .footer-top__heading {
   text-align: center;
+  color: var(--color-sacramento-state-green);
+}
+
+.footer-top__button {
+  color: var(--color-sacramento-state-green);
+}
+
+.footer-top__button:visited {
   color: var(--color-sacramento-state-green);
 }
 
@@ -1296,10 +1286,10 @@ section {
   margin-bottom: -28px;
   padding: 24px 36px;
 
-  border: 3px solid red;
   background-color: var(--color-dark-green);
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
 .about-directors__alt-text {
