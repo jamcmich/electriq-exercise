@@ -1,25 +1,19 @@
-const handleMenuClick = (bool) => {
-  console.log(bool);
+const handleOpenMenu = () => {
+  const sideNav = document.querySelector(".side-nav");
+  sideNav.style.right = "0";
 
-  let body = document.body,
-    sidePanelElem = document.querySelector(".nav__side-panel"),
-    overlayElem = document.querySelector(".nav__overlay"),
-    openMenuButton = document.querySelector(".nav__open-menu-button"),
-    closeMenuButton = document.querySelector(".nav__close-menu-button");
+  const overlay = document.querySelector(".side-nav__overlay");
+  overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
 
-  /* if open menu button is clicked */
-  if (bool) {
-    body.classList.add("no-scroll");
-    sidePanelElem.classList.add("nav__side-panel--is-open");
-    overlayElem.classList.add("nav__overlay--is-visible");
-    closeMenuButton.focus();
-  }
+  document.body.style.overflow = "hidden";
+};
 
-  /* if close menu button is clicked */
-  if (!bool) {
-    body.classList.remove("no-scroll");
-    sidePanelElem.classList.remove("nav__side-panel--is-open");
-    overlayElem.classList.remove("nav__overlay--is-visible");
-    openMenuButton.focus();
-  }
+const handleCloseMenu = () => {
+  const sideNav = document.querySelector(".side-nav");
+  sideNav.style.right = "-70%";
+
+  const overlay = document.querySelector(".side-nav__overlay");
+  overlay.style.backgroundColor = "rgba(0, 0, 0, 0)";
+
+  document.body.style.overflow = "auto";
 };
