@@ -1,12 +1,12 @@
-<!-- ABOUT PAGE -->
+<!-- HOME PAGE -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Favicon -->
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,153 +16,177 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myteam</title>
+    <title>myteam | Building high-performance teams for top companies</title>
   </head>
 
   <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div class="nav__main-bar">
-        <img class="nav__logo" src="/assets/logo-myteam.svg" alt="" />
-        <span
-          id="icon-menu"
-          class="iconify nav__show-until"
-          data-icon="mdi:menu"
-          data-width="32"
-          onclick="handleMenuClick(this)"
-        ></span>
+    <!-- Landing Section -->
+    <section class="home-landing">
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="nav__main-bar">
+          <img class="nav__logo" src="/assets/logo-myteam.svg" alt="" />
+          <button
+            class="nav__open-menu-button nav__show-until"
+            onclick="handleMenuClick(true)"
+          >
+            <span class="iconify" data-icon="mdi:menu" data-width="32"></span>
+          </button>
 
-        <ul class="nav__links nav__links--horizontal no-bullets">
-          <li class="nav__link-item"><a class="nav-link">home</a></li>
-          <li class="nav__link-item"><a class="nav-link">about us</a></li>
-        </ul>
-
-        <button class="nav-link button-primary--default--light nav__hide-until">
-          contact us
-        </button>
-      </div>
-
-      <div class="nav__overlay">
-        <div class="nav__side-panel">
-          <div class="nav__close-container">
-            <span
-              id="icon-close"
-              class="iconify"
-              data-icon="mdi:close"
-              data-width="32"
-              onclick="handleMenuClick(this)"
-            ></span>
-          </div>
-
-          <ul class="nav__links no-bullets">
-            <li class="nav__link-item"><a class="nav-link">home</a></li>
-            <li class="nav__link-item"><a class="nav-link">about us</a></li>
+          <ul class="nav__links nav__links--horizontal no-bullets">
             <li class="nav__link-item">
-              <button class="nav-link button-primary--default--light">
-                contact us
-              </button>
+              <a class="nav-link">home</a>
+            </li>
+            <li class="nav__link-item">
+              <a class="nav-link">about us</a>
             </li>
           </ul>
 
-          <div class="nav__graphic-container">
-            <img class="nav__graphic" src="/assets/navbar-graphic.svg" alt="" />
+          <button
+            class="nav-link button-primary--default--light nav__hide-until"
+          >
+            contact us
+          </button>
+        </div>
+
+        <div class="nav__overlay">
+          <div class="nav__side-panel">
+            <div class="nav__close-container">
+              <button
+                class="nav__close-menu-button nav__show-until"
+                onclick="handleMenuClick(false)"
+              >
+                <span
+                  class="iconify"
+                  data-icon="mdi:close"
+                  data-width="32"
+                ></span>
+              </button>
+            </div>
+
+            <ul class="nav__links no-bullets">
+              <li class="nav__link-item">
+                <a class="nav-link" tabindex="0">home</a>
+              </li>
+              <li class="nav__link-item">
+                <a class="nav-link" tabindex="0">about us</a>
+              </li>
+              <li class="nav__link-item">
+                <button class="nav-link button-primary--default--light">
+                  contact us
+                </button>
+              </li>
+            </ul>
+
+            <div class="nav__graphic-container">
+              <img
+                class="nav__graphic"
+                src="/assets/navbar-graphic.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- Landing Section -->
-    <section class="landing">
-      <div class="landing__text-container">
-        <h1 class="landing__heading heading-1--lg">
+      <div class="home-landing__text-container">
+        <h1 class="home-landing__heading heading-1--lg">
           Find the <br />best <span class="accent-text--coral">talent</span>
         </h1>
-        <p class="landing__paragraph body--lg accent-element--rapture-blue">
+        <p
+          class="home-landing__paragraph body--lg accent-element--rapture-blue"
+        >
           Finding the right people and building high performing teams can be
           hard. Most companies aren't tapping into the abundance of global
           talent. We're about to change that.
         </p>
       </div>
 
-      <div class="landing__graphic-container-01">
+      <div class="home-landing__graphic-container-01">
         <img
-          class="landing__graphic-01"
-          src="/assets/about-landing-graphic-01.svg"
+          class="home-landing__graphic-01"
+          src="/assets/about/about-landing-graphic-01.svg"
           alt=""
         />
       </div>
 
-      <div class="landing__graphic-container-02">
+      <div class="home-landing__graphic-container-02">
         <img
-          class="landing__graphic-02"
-          src="/assets/about-landing-graphic-02.svg"
+          class="home-landing__graphic-02"
+          src="/assets/about/about-landing-graphic-02.svg"
           alt=""
         />
       </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features">
-      <div class="features__heading-container">
-        <h1 class="features__heading heading-2 accent-element--coral">
+    <section class="home-features">
+      <div class="home-features__heading-container">
+        <h1 class="home-features__heading heading-2 accent-element--coral">
           Build & manage distributed teams like no one else.
         </h1>
       </div>
 
-      <div class="features__graphic-container">
+      <div class="home-features__graphic-container">
         <img
-          class="features__graphic"
-          src="/assets/about-features-graphic.svg"
+          class="home-features__graphic"
+          src="/assets/about/about-features-graphic.svg"
           alt=""
         />
       </div>
 
-      <div class="features__items-container">
-        <div class="features__items">
+      <div class="home-features__items-container">
+        <div class="home-features__items">
           <img
-            class="features__icon"
-            src="/assets/about-features-experienced-individuals.svg"
+            class="home-features__icon"
+            src="/assets/about/about-features-experienced-individuals.svg"
             alt=""
           />
-          <div class="features__text-container">
-            <h3 class="features__item-heading heading-3 accent-text--coral">
+          <div class="home-features__text-container">
+            <h3
+              class="home-features__item-heading heading-3 accent-text--coral"
+            >
               Experienced Individuals
             </h3>
-            <p class="features__desc body--lg">
+            <p class="home-features__desc body--lg">
               Our network is made up of highly experienced professionals who are
               passionate about what they do.
             </p>
           </div>
         </div>
 
-        <div class="features__items">
+        <div class="home-features__items">
           <img
-            class="features__icon"
-            src="/assets/about-features-easy-to-implement.svg"
+            class="home-features__icon"
+            src="/assets/about/about-features-easy-to-implement.svg"
             alt=""
           />
-          <div class="features__text-container">
-            <h3 class="features__item-heading heading-3 accent-text--coral">
+          <div class="home-features__text-container">
+            <h3
+              class="home-features__item-heading heading-3 accent-text--coral"
+            >
               Easy to Implement
             </h3>
-            <p class="features__desc body--lg">
+            <p class="home-features__desc body--lg">
               Our processes have been refined over years of implementation
               meaning our teams always deliver.
             </p>
           </div>
         </div>
 
-        <div class="features__items">
+        <div class="home-features__items">
           <img
-            class="features__icon"
-            src="/assets/about-features-enhanced-productivity.svg"
+            class="home-features__icon"
+            src="/assets/about/about-features-enhanced-productivity.svg"
             alt=""
           />
-          <div class="features__text-container">
-            <h3 class="features__item-heading heading-3 accent-text--coral">
+          <div class="home-features__text-container">
+            <h3
+              class="home-features__item-heading heading-3 accent-text--coral"
+            >
               Enhanced Productivity
             </h3>
-            <p class="features__desc body--lg">
+            <p class="home-features__desc body--lg">
               Our customized platform with in-built analytics helps you manage
               your distributed teams.
             </p>
@@ -172,111 +196,113 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
-      <h1 class="testimonials__heading heading-2">
+    <section class="home-testimonials">
+      <h1 class="home-testimonials__heading heading-2">
         Delivering real results for top companies. Some of our
         <span class="accent-text--rapture-blue">success stories.</span>
       </h1>
 
-      <div class="testimonials__collection">
+      <div class="home-testimonials__collection">
         <!-- Kady Baker -->
-        <div class="testimonials__profiles-container">
-          <div class="testimonials__quote-container">
+        <div class="home-testimonials__profiles-container">
+          <div class="home-testimonials__quote-container">
             <img
-              class="quote__graphic"
-              src="/assets/about-testimonials-air-quotes.svg"
+              class="home-testimonials__quote-graphic"
+              src="/assets/about/about-testimonials-air-quotes.svg"
               alt=""
             />
-            <p class="quote__text body--sm">
+            <p class="home-testimonials__quote-text body--sm">
               “The team perfectly fit the specialized skill set required. They
               focused on the most essential features helping us launch the
               platform eight months faster than planned.”
             </p>
           </div>
 
-          <div class="testimonials__profile">
-            <h2 class="profile__name heading-3 accent-text--rapture-blue">
+          <div class="home-testimonials__profile">
+            <h2
+              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
+            >
               Kady baker
             </h2>
-            <span class="profile__title subheading--sm"
-              >Product Manager at Bookmark</span
-            >
+            <span class="subheading--sm">Product Manager at Bookmark</span>
           </div>
 
           <img
-            class="testimonials__portrait"
-            src="/assets/about-testimonials-kady-baker.jpg"
+            class="home-testimonials__portrait"
+            src="/assets/about/about-testimonials-kady-baker.jpg"
             alt=""
           />
         </div>
 
         <!-- Aiysha Reese -->
-        <div class="testimonials__profiles-container">
-          <div class="testimonials__quote-container">
+        <div class="home-testimonials__profiles-container">
+          <div class="home-testimonials__quote-container">
             <img
-              class="quote__graphic"
-              src="/assets/about-testimonials-air-quotes.svg"
+              class="home-testimonials__quote-graphic"
+              src="/assets/about/about-testimonials-air-quotes.svg"
               alt=""
             />
-            <p class="quote__text body--sm">
+            <p class="home-testimonials__quote-text body--sm">
               “We needed to automate our entire onboarding process. The team
               came in and built out the whole journey. Since going live, user
               retention has gone through the roof!”
             </p>
           </div>
 
-          <div class="testimonials__profile">
-            <h2 class="profile__name heading-3 accent-text--rapture-blue">
+          <div class="home-testimonials__profile">
+            <h2
+              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
+            >
               Aiysha Reese
             </h2>
-            <span class="profile__title subheading--sm">Founder of Manage</span>
+            <span class="subheading--sm">Founder of Manage</span>
           </div>
 
           <img
-            class="testimonials__portrait"
-            src="/assets/about-testimonials-aiysha-reese.jpg"
+            class="home-testimonials__portrait"
+            src="/assets/about/about-testimonials-aiysha-reese.jpg"
             alt=""
           />
         </div>
 
         <!-- Arthur Clarke -->
-        <div class="testimonials__profiles-container">
-          <div class="testimonials__quote-container">
+        <div class="home-testimonials__profiles-container">
+          <div class="home-testimonials__quote-container">
             <img
-              class="quote__graphic"
-              src="/assets/about-testimonials-air-quotes.svg"
+              class="home-testimonials__quote-graphic"
+              src="/assets/about/about-testimonials-air-quotes.svg"
               alt=""
             />
-            <p class="quote__text body--sm">
+            <p class="home-testimonials__quote-text body--sm">
               “Amazing. Our team helped us build an app that delivered a new
               experience for hiring a physio. The launch was an instant success
               with 100k downloads in the first month.”
             </p>
           </div>
 
-          <div class="testimonials__profile">
-            <h2 class="profile__name heading-3 accent-text--rapture-blue">
+          <div class="home-testimonials__profile">
+            <h2
+              class="home-testimonials__profile-name heading-3 accent-text--rapture-blue"
+            >
               Arthur Clarke
             </h2>
-            <span class="profile__title subheading--sm"
-              >Co-founder of MyPhysio</span
-            >
+            <span class="subheading--sm">Co-founder of MyPhysio</span>
           </div>
 
           <img
-            class="testimonials__portrait"
-            src="/assets/about-testimonials-arthur-clarke.jpg"
+            class="home-testimonials__portrait"
+            src="/assets/about/about-testimonials-arthur-clarke.jpg"
             alt=""
           />
         </div>
       </div>
 
-      <div class="testimonials__graphic-container-01">
-        <img src="/assets/about-testimonials-graphic-01.svg" alt="" />
+      <div class="home-testimonials__graphic-container-01">
+        <img src="/assets/about/about-testimonials-graphic-01.svg" alt="" />
       </div>
 
-      <div class="testimonials__graphic-container-02">
-        <img src="/assets/about-testimonials-graphic-02.svg" alt="" />
+      <div class="home-testimonials__graphic-container-02">
+        <img src="/assets/about/about-testimonials-graphic-02.svg" alt="" />
       </div>
     </section>
 
@@ -290,7 +316,7 @@
 
         <img
           class="footer-top__graphic"
-          src="/assets/footer-graphic.svg"
+          src="/assets/footer/footer-graphic.svg"
           alt=""
         />
       </div>
